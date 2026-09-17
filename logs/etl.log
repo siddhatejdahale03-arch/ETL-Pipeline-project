@@ -1,0 +1,43 @@
+2026-09-17 23:51:25,081 | INFO | __main__ | 🚀 Fetching products from DummyJSON...
+2026-09-17 23:51:26,766 | INFO | __main__ | Fetching: limit=10, skip=0, Status=200
+2026-09-17 23:51:26,771 | INFO | __main__ | Received 10 products
+2026-09-17 23:51:27,459 | INFO | __main__ | Fetching: limit=10, skip=10, Status=200
+2026-09-17 23:51:27,462 | INFO | __main__ | Received 10 products
+2026-09-17 23:51:29,455 | INFO | __main__ | Fetching: limit=10, skip=20, Status=200
+2026-09-17 23:51:29,458 | INFO | __main__ | Received 10 products
+2026-09-17 23:51:30,274 | INFO | __main__ | Fetching: limit=10, skip=30, Status=200
+2026-09-17 23:51:30,277 | INFO | __main__ | Received 10 products
+2026-09-17 23:51:31,295 | INFO | __main__ | Fetching: limit=10, skip=40, Status=200
+2026-09-17 23:51:31,298 | INFO | __main__ | Received 10 products
+2026-09-17 23:51:32,033 | INFO | __main__ | Fetching: limit=10, skip=50, Status=200
+2026-09-17 23:51:32,036 | INFO | __main__ | Received 10 products
+2026-09-17 23:51:33,168 | INFO | __main__ | Fetching: limit=10, skip=60, Status=200
+2026-09-17 23:51:33,169 | INFO | __main__ | Received 10 products
+2026-09-17 23:51:33,887 | INFO | __main__ | Fetching: limit=10, skip=70, Status=200
+2026-09-17 23:51:33,889 | INFO | __main__ | Received 10 products
+2026-09-17 23:51:34,754 | INFO | __main__ | Fetching: limit=10, skip=80, Status=200
+2026-09-17 23:51:34,757 | INFO | __main__ | Received 10 products
+2026-09-17 23:51:35,538 | INFO | __main__ | Fetching: limit=10, skip=90, Status=200
+2026-09-17 23:51:35,541 | INFO | __main__ | Received 10 products
+2026-09-17 23:51:36,279 | INFO | __main__ | Fetching: limit=10, skip=100, Status=200
+2026-09-17 23:51:36,282 | INFO | __main__ | Received 10 products
+2026-09-17 23:51:36,996 | INFO | __main__ | Fetching: limit=10, skip=110, Status=200
+2026-09-17 23:51:36,999 | INFO | __main__ | Received 10 products
+2026-09-17 23:51:37,874 | INFO | __main__ | Fetching: limit=10, skip=120, Status=200
+2026-09-17 23:51:37,878 | INFO | __main__ | Received 10 products
+2026-09-17 23:51:38,696 | INFO | __main__ | Fetching: limit=10, skip=130, Status=200
+2026-09-17 23:51:38,699 | INFO | __main__ | Received 10 products
+2026-09-17 23:51:39,925 | INFO | __main__ | Fetching: limit=10, skip=140, Status=200
+2026-09-17 23:51:39,926 | INFO | __main__ | Received 10 products
+2026-09-17 23:51:41,433 | INFO | __main__ | Fetching: limit=10, skip=150, Status=200
+2026-09-17 23:51:41,436 | INFO | __main__ | Received 10 products
+2026-09-17 23:51:42,984 | INFO | __main__ | Fetching: limit=10, skip=160, Status=200
+2026-09-17 23:51:42,987 | INFO | __main__ | Received 10 products
+2026-09-17 23:51:43,955 | INFO | __main__ | Fetching: limit=10, skip=170, Status=200
+2026-09-17 23:51:43,958 | INFO | __main__ | Received 10 products
+2026-09-17 23:51:45,631 | INFO | __main__ | Fetching: limit=10, skip=180, Status=200
+2026-09-17 23:51:45,635 | INFO | __main__ | Received 10 products
+2026-09-17 23:51:46,453 | INFO | __main__ | Fetching: limit=10, skip=190, Status=200
+2026-09-17 23:51:46,456 | INFO | __main__ | Received 4 products
+2026-09-17 23:51:46,456 | INFO | __main__ | ✅ Total products fetched: 194
+2026-09-17 23:51:46,478 | INFO | __main__ | ✅ Raw data saved successfully: data/raw/dummyjson_products.json
