@@ -5,6 +5,7 @@ import requests
 from tenacity import retry, stop_after_attempt, wait_exponential
 
 from etl.utils.logger import get_logger
+from etl.validators.product import validate_products
 
 
 API_URL = "https://dummyjson.com/products"
@@ -39,7 +40,6 @@ def fetch_page(skip):
 
     return response.json()
 
-
 def fetch_products():
     logger.info("🚀 Fetching products from DummyJSON...")
 
@@ -61,6 +61,7 @@ def fetch_products():
 
     logger.info(f"✅ Total products fetched: {len(all_products)}")
 
+    # Save raw API data
     raw_dir = Path("data/raw")
     raw_dir.mkdir(parents=True, exist_ok=True)
 
@@ -71,8 +72,14 @@ def fetch_products():
 
     logger.info(f"✅ Raw data saved successfully: {file_path}")
 
-    return all_products
+    # Validate products using Pydantic
+    valid_products = validate_products(all_products)
 
+    logger.info(
+        f"✅ Valid products: {len(valid_products)}"
+    )
+
+    return valid_products
 
 if __name__ == "__main__":
     fetch_products()

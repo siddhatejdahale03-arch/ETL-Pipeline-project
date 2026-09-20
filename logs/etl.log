@@ -41,3 +41,58 @@
 2026-09-17 23:51:46,456 | INFO | __main__ | Received 4 products
 2026-09-17 23:51:46,456 | INFO | __main__ | ✅ Total products fetched: 194
 2026-09-17 23:51:46,478 | INFO | __main__ | ✅ Raw data saved successfully: data/raw/dummyjson_products.json
+2026-09-18 23:59:17,588 | INFO | __main__ | Connecting to Salesforce (domain=velocity-computing-4118.my.salesforce.com)
+2026-09-18 23:59:44,000 | INFO | __main__ | Connecting to Salesforce (domain=velocity-computing-4118.my)
+2026-09-18 23:59:44,005 | ERROR | __main__ | Could not reach Salesforce: HTTPSConnectionPool(host='velocity-computing-4118.my.salesforce.com', port=443): Max retries exceeded with url: /services/Soap/u/59.0 (Caused by NameResolutionError("HTTPSConnection(host='velocity-computing-4118.my.salesforce.com', port=443): Failed to resolve 'velocity-computing-4118.my.salesforce.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-09-18 23:59:52,977 | INFO | __main__ | Connecting to Salesforce (domain=velocity-computing-4118.my)
+2026-09-18 23:59:54,168 | ERROR | __main__ | Salesforce authentication failed. Check .env credentials and domain.
+2026-09-19 00:00:21,980 | INFO | __main__ | Connecting to Salesforce (domain=velocity-computing-4118.my)
+2026-09-19 00:00:22,931 | ERROR | __main__ | Salesforce authentication failed. Check .env credentials and domain.
+2026-09-19 00:03:00,824 | INFO | __main__ | Connecting to Salesforce (domain=velocity-computing-4118.my)
+2026-09-19 00:03:00,832 | ERROR | __main__ | Could not reach Salesforce: HTTPSConnectionPool(host='velocity-computing-4118.my.salesforce.com', port=443): Max retries exceeded with url: /services/oauth2/token (Caused by NameResolutionError("HTTPSConnection(host='velocity-computing-4118.my.salesforce.com', port=443): Failed to resolve 'velocity-computing-4118.my.salesforce.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2026-09-19 00:03:39,315 | INFO | __main__ | Connecting to Salesforce (domain=velocity-computing-4118.my)
+2026-09-19 00:03:40,092 | ERROR | __main__ | Salesforce authentication failed. Check .env credentials and domain.
+2026-09-20 23:18:05,812 | INFO | __main__ | 🚀 Fetching products from DummyJSON...
+2026-09-20 23:18:06,591 | INFO | __main__ | Fetching: limit=10, skip=0, Status=200
+2026-09-20 23:18:06,593 | INFO | __main__ | Received 10 products
+2026-09-20 23:18:07,196 | INFO | __main__ | Fetching: limit=10, skip=10, Status=200
+2026-09-20 23:18:07,198 | INFO | __main__ | Received 10 products
+2026-09-20 23:18:07,841 | INFO | __main__ | Fetching: limit=10, skip=20, Status=200
+2026-09-20 23:18:07,844 | INFO | __main__ | Received 10 products
+2026-09-20 23:18:08,493 | INFO | __main__ | Fetching: limit=10, skip=30, Status=200
+2026-09-20 23:18:08,496 | INFO | __main__ | Received 10 products
+2026-09-20 23:18:09,102 | INFO | __main__ | Fetching: limit=10, skip=40, Status=200
+2026-09-20 23:18:09,103 | INFO | __main__ | Received 10 products
+2026-09-20 23:18:09,739 | INFO | __main__ | Fetching: limit=10, skip=50, Status=200
+2026-09-20 23:18:09,742 | INFO | __main__ | Received 10 products
+2026-09-20 23:18:10,457 | INFO | __main__ | Fetching: limit=10, skip=60, Status=200
+2026-09-20 23:18:10,459 | INFO | __main__ | Received 10 products
+2026-09-20 23:18:11,071 | INFO | __main__ | Fetching: limit=10, skip=70, Status=200
+2026-09-20 23:18:11,073 | INFO | __main__ | Received 10 products
+2026-09-20 23:18:11,704 | INFO | __main__ | Fetching: limit=10, skip=80, Status=200
+2026-09-20 23:18:11,707 | INFO | __main__ | Received 10 products
+2026-09-20 23:18:12,386 | INFO | __main__ | Fetching: limit=10, skip=90, Status=200
+2026-09-20 23:18:12,389 | INFO | __main__ | Received 10 products
+2026-09-20 23:18:13,055 | INFO | __main__ | Fetching: limit=10, skip=100, Status=200
+2026-09-20 23:18:13,058 | INFO | __main__ | Received 10 products
+2026-09-20 23:18:13,736 | INFO | __main__ | Fetching: limit=10, skip=110, Status=200
+2026-09-20 23:18:13,737 | INFO | __main__ | Received 10 products
+2026-09-20 23:18:14,444 | INFO | __main__ | Fetching: limit=10, skip=120, Status=200
+2026-09-20 23:18:14,446 | INFO | __main__ | Received 10 products
+2026-09-20 23:18:15,154 | INFO | __main__ | Fetching: limit=10, skip=130, Status=200
+2026-09-20 23:18:15,155 | INFO | __main__ | Received 10 products
+2026-09-20 23:18:15,801 | INFO | __main__ | Fetching: limit=10, skip=140, Status=200
+2026-09-20 23:18:15,803 | INFO | __main__ | Received 10 products
+2026-09-20 23:18:16,414 | INFO | __main__ | Fetching: limit=10, skip=150, Status=200
+2026-09-20 23:18:16,416 | INFO | __main__ | Received 10 products
+2026-09-20 23:18:17,097 | INFO | __main__ | Fetching: limit=10, skip=160, Status=200
+2026-09-20 23:18:17,100 | INFO | __main__ | Received 10 products
+2026-09-20 23:18:17,834 | INFO | __main__ | Fetching: limit=10, skip=170, Status=200
+2026-09-20 23:18:17,837 | INFO | __main__ | Received 10 products
+2026-09-20 23:18:18,514 | INFO | __main__ | Fetching: limit=10, skip=180, Status=200
+2026-09-20 23:18:18,517 | INFO | __main__ | Received 10 products
+2026-09-20 23:18:19,182 | INFO | __main__ | Fetching: limit=10, skip=190, Status=200
+2026-09-20 23:18:19,184 | INFO | __main__ | Received 4 products
+2026-09-20 23:18:19,184 | INFO | __main__ | ✅ Total products fetched: 194
+2026-09-20 23:18:19,205 | INFO | __main__ | ✅ Raw data saved successfully: data/raw/dummyjson_products.json
+2026-09-20 23:18:19,207 | INFO | __main__ | ✅ Valid products: 194
