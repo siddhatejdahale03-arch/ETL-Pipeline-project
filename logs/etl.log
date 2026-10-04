@@ -140,3 +140,991 @@
 2026-09-22 23:43:19,712 | INFO | __main__ | ✅ Total products fetched: 194
 2026-09-22 23:43:19,728 | INFO | __main__ | ✅ Raw data saved successfully: data/raw/dummyjson_products.json
 2026-09-22 23:43:19,730 | INFO | __main__ | ✅ Valid products: 194
+2026-09-23 00:23:44,801 | INFO | etl.extractors.dummyjson | 🚀 Fetching products from DummyJSON...
+2026-09-23 00:23:45,602 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=0, Status=200
+2026-09-23 00:23:45,605 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:23:46,916 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=10, Status=200
+2026-09-23 00:23:46,920 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:23:47,626 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=20, Status=200
+2026-09-23 00:23:47,629 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:23:48,506 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=30, Status=200
+2026-09-23 00:23:48,508 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:23:50,168 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=40, Status=200
+2026-09-23 00:23:50,172 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:23:51,112 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=50, Status=200
+2026-09-23 00:23:51,115 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:23:51,908 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=60, Status=200
+2026-09-23 00:23:51,911 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:23:53,823 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=70, Status=200
+2026-09-23 00:23:53,826 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:23:55,228 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=80, Status=200
+2026-09-23 00:23:55,231 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:23:56,310 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=90, Status=200
+2026-09-23 00:23:56,312 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:23:57,143 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=100, Status=200
+2026-09-23 00:23:57,144 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:23:58,562 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=110, Status=200
+2026-09-23 00:23:58,564 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:23:59,215 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=120, Status=200
+2026-09-23 00:23:59,218 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:24:00,336 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=130, Status=200
+2026-09-23 00:24:00,338 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:24:01,045 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=140, Status=200
+2026-09-23 00:24:01,048 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:24:02,045 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=150, Status=200
+2026-09-23 00:24:02,046 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:24:03,248 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=160, Status=200
+2026-09-23 00:24:03,251 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:24:04,399 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=170, Status=200
+2026-09-23 00:24:04,400 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:24:05,527 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=180, Status=200
+2026-09-23 00:24:05,531 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:24:06,448 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=190, Status=200
+2026-09-23 00:24:06,452 | INFO | etl.extractors.dummyjson | Received 4 products
+2026-09-23 00:24:06,452 | INFO | etl.extractors.dummyjson | ✅ Total products fetched: 194
+2026-09-23 00:24:06,475 | INFO | etl.extractors.dummyjson | ✅ Raw data saved successfully: data/raw/dummyjson_products.json
+2026-09-23 00:24:06,482 | INFO | etl.extractors.dummyjson | ✅ Valid products: 194
+2026-09-23 00:27:52,120 | INFO | etl.extractors.dummyjson | 🚀 Fetching products from DummyJSON...
+2026-09-23 00:27:52,938 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=0, Status=200
+2026-09-23 00:27:52,943 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:27:53,694 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=10, Status=200
+2026-09-23 00:27:53,697 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:27:54,797 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=20, Status=200
+2026-09-23 00:27:54,801 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:27:55,453 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=30, Status=200
+2026-09-23 00:27:55,457 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:27:56,540 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=40, Status=200
+2026-09-23 00:27:56,543 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:27:57,461 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=50, Status=200
+2026-09-23 00:27:57,464 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:27:58,794 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=60, Status=200
+2026-09-23 00:27:58,797 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:27:59,449 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=70, Status=200
+2026-09-23 00:27:59,452 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:00,333 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=80, Status=200
+2026-09-23 00:28:00,337 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:01,060 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=90, Status=200
+2026-09-23 00:28:01,064 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:01,956 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=100, Status=200
+2026-09-23 00:28:01,957 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:02,909 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=110, Status=200
+2026-09-23 00:28:02,913 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:03,607 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=120, Status=200
+2026-09-23 00:28:03,610 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:04,630 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=130, Status=200
+2026-09-23 00:28:04,632 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:05,860 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=140, Status=200
+2026-09-23 00:28:05,863 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:07,601 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=150, Status=200
+2026-09-23 00:28:07,605 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:08,416 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=160, Status=200
+2026-09-23 00:28:08,420 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:09,651 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=170, Status=200
+2026-09-23 00:28:09,654 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:10,468 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=180, Status=200
+2026-09-23 00:28:10,471 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:11,167 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=190, Status=200
+2026-09-23 00:28:11,171 | INFO | etl.extractors.dummyjson | Received 4 products
+2026-09-23 00:28:11,171 | INFO | etl.extractors.dummyjson | ✅ Total products fetched: 194
+2026-09-23 00:28:11,195 | INFO | etl.extractors.dummyjson | ✅ Raw data saved successfully: data/raw/dummyjson_products.json
+2026-09-23 00:28:11,198 | INFO | etl.extractors.dummyjson | ✅ Valid products: 194
+2026-09-23 00:28:31,590 | INFO | etl.extractors.dummyjson | 🚀 Fetching products from DummyJSON...
+2026-09-23 00:28:32,282 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=0, Status=200
+2026-09-23 00:28:32,286 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:33,333 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=10, Status=200
+2026-09-23 00:28:33,336 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:34,283 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=20, Status=200
+2026-09-23 00:28:34,286 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:35,453 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=30, Status=200
+2026-09-23 00:28:35,456 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:36,131 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=40, Status=200
+2026-09-23 00:28:36,134 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:36,820 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=50, Status=200
+2026-09-23 00:28:36,822 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:39,045 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=60, Status=200
+2026-09-23 00:28:39,048 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:41,905 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=70, Status=200
+2026-09-23 00:28:41,908 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:42,628 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=80, Status=200
+2026-09-23 00:28:42,631 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:43,588 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=90, Status=200
+2026-09-23 00:28:43,592 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:45,383 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=100, Status=200
+2026-09-23 00:28:45,386 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:46,494 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=110, Status=200
+2026-09-23 00:28:46,497 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:47,315 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=120, Status=200
+2026-09-23 00:28:47,318 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:48,356 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=130, Status=200
+2026-09-23 00:28:48,359 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:48,987 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=140, Status=200
+2026-09-23 00:28:48,990 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:50,811 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=150, Status=200
+2026-09-23 00:28:50,812 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:51,735 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=160, Status=200
+2026-09-23 00:28:51,738 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:52,759 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=170, Status=200
+2026-09-23 00:28:52,762 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:54,190 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=180, Status=200
+2026-09-23 00:28:54,193 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:28:56,238 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=190, Status=200
+2026-09-23 00:28:56,241 | INFO | etl.extractors.dummyjson | Received 4 products
+2026-09-23 00:28:56,241 | INFO | etl.extractors.dummyjson | ✅ Total products fetched: 194
+2026-09-23 00:28:56,263 | INFO | etl.extractors.dummyjson | ✅ Raw data saved successfully: data/raw/dummyjson_products.json
+2026-09-23 00:28:56,266 | INFO | etl.extractors.dummyjson | ✅ Valid products: 194
+2026-09-23 00:30:24,150 | INFO | __main__ | === ETL PIPELINE STARTED ===
+2026-09-23 00:30:24,150 | INFO | __main__ | [1/4] Extracting data from DummyJSON...
+2026-09-23 00:30:24,151 | INFO | etl.extractors.dummyjson | 🚀 Fetching products from DummyJSON...
+2026-09-23 00:30:24,979 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=0, Status=200
+2026-09-23 00:30:24,982 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:30:25,992 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=10, Status=200
+2026-09-23 00:30:25,995 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:30:26,846 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=20, Status=200
+2026-09-23 00:30:26,849 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:30:27,850 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=30, Status=200
+2026-09-23 00:30:27,854 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:30:28,516 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=40, Status=200
+2026-09-23 00:30:28,518 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:30:29,322 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=50, Status=200
+2026-09-23 00:30:29,325 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:30:30,541 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=60, Status=200
+2026-09-23 00:30:30,544 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:30:32,085 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=70, Status=200
+2026-09-23 00:30:32,088 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:30:33,212 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=80, Status=200
+2026-09-23 00:30:33,216 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:30:34,002 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=90, Status=200
+2026-09-23 00:30:34,005 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:30:35,336 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=100, Status=200
+2026-09-23 00:30:35,338 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:30:36,052 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=110, Status=200
+2026-09-23 00:30:36,054 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:30:36,718 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=120, Status=200
+2026-09-23 00:30:36,718 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:30:37,517 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=130, Status=200
+2026-09-23 00:30:37,518 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:30:38,357 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=140, Status=200
+2026-09-23 00:30:38,360 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:30:39,665 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=150, Status=200
+2026-09-23 00:30:39,668 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:30:40,481 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=160, Status=200
+2026-09-23 00:30:40,484 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:30:41,713 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=170, Status=200
+2026-09-23 00:30:41,715 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:30:42,394 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=180, Status=200
+2026-09-23 00:30:42,397 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:30:43,128 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=190, Status=200
+2026-09-23 00:30:43,131 | INFO | etl.extractors.dummyjson | Received 4 products
+2026-09-23 00:30:43,131 | INFO | etl.extractors.dummyjson | ✅ Total products fetched: 194
+2026-09-23 00:30:43,153 | INFO | etl.extractors.dummyjson | ✅ Raw data saved successfully: data/raw/dummyjson_products.json
+2026-09-23 00:30:43,157 | INFO | etl.extractors.dummyjson | ✅ Valid products: 194
+2026-09-23 00:30:43,157 | INFO | __main__ | Extracted and validated products: 194
+2026-09-23 00:30:43,157 | INFO | __main__ | [2/4] Transforming data...
+2026-09-23 00:30:43,189 | INFO | __main__ | Transformed rows: 194
+2026-09-23 00:30:43,189 | INFO | __main__ | [3/4] Running data quality checks...
+2026-09-23 00:30:43,209 | INFO | __main__ | [4/4] Loading data into PostgreSQL...
+2026-09-23 00:30:43,245 | INFO | __main__ | Products loaded: 194
+2026-09-23 00:30:43,245 | INFO | __main__ | === ETL PIPELINE COMPLETED ===
+2026-09-23 00:37:01,889 | INFO | __main__ | === ETL PIPELINE STARTED ===
+2026-09-23 00:37:01,889 | INFO | __main__ | [1/4] Extracting data from DummyJSON...
+2026-09-23 00:37:01,889 | INFO | etl.extractors.dummyjson | 🚀 Fetching products from DummyJSON...
+2026-09-23 00:37:02,756 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=0, Status=200
+2026-09-23 00:37:02,759 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:37:03,972 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=10, Status=200
+2026-09-23 00:37:03,975 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:37:04,622 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=20, Status=200
+2026-09-23 00:37:04,623 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:37:05,348 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=30, Status=200
+2026-09-23 00:37:05,349 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:37:06,428 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=40, Status=200
+2026-09-23 00:37:06,431 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:37:07,350 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=50, Status=200
+2026-09-23 00:37:07,352 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:37:08,274 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=60, Status=200
+2026-09-23 00:37:08,283 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:37:09,026 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=70, Status=200
+2026-09-23 00:37:09,029 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:37:09,807 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=80, Status=200
+2026-09-23 00:37:09,809 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:37:11,447 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=90, Status=200
+2026-09-23 00:37:11,451 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:37:12,153 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=100, Status=200
+2026-09-23 00:37:12,157 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:37:12,881 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=110, Status=200
+2026-09-23 00:37:12,884 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:37:13,697 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=120, Status=200
+2026-09-23 00:37:13,701 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:37:14,437 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=130, Status=200
+2026-09-23 00:37:14,440 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:37:15,129 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=140, Status=200
+2026-09-23 00:37:15,132 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:37:16,059 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=150, Status=200
+2026-09-23 00:37:16,062 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:37:16,811 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=160, Status=200
+2026-09-23 00:37:16,813 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:37:17,927 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=170, Status=200
+2026-09-23 00:37:17,930 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:37:18,919 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=180, Status=200
+2026-09-23 00:37:18,923 | INFO | etl.extractors.dummyjson | Received 10 products
+2026-09-23 00:37:19,741 | INFO | etl.extractors.dummyjson | Fetching: limit=10, skip=190, Status=200
+2026-09-23 00:37:19,745 | INFO | etl.extractors.dummyjson | Received 4 products
+2026-09-23 00:37:19,745 | INFO | etl.extractors.dummyjson | ✅ Total products fetched: 194
+2026-09-23 00:37:19,768 | INFO | etl.extractors.dummyjson | ✅ Raw data saved successfully: data/raw/dummyjson_products.json
+2026-09-23 00:37:19,777 | INFO | etl.extractors.dummyjson | ✅ Valid products: 194
+2026-09-23 00:37:19,778 | INFO | __main__ | Extracted and validated products: 194
+2026-09-23 00:37:19,778 | INFO | __main__ | [2/4] Transforming data...
+2026-09-23 00:37:19,805 | INFO | __main__ | Transformed rows: 194
+2026-09-23 00:37:19,805 | INFO | __main__ | [3/4] Running data quality checks...
+2026-09-23 00:37:19,819 | INFO | __main__ | [4/4] Loading data into PostgreSQL...
+2026-09-23 00:37:19,838 | ERROR | __main__ | ❌ ETL PIPELINE FAILED
+Traceback (most recent call last):
+  File "/Volumes/Project Drive/Python/enterprise-etl-pipeline/.venv/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 1817, in _execute_context
+    context = constructor(
+        dialect, self, conn, execution_options, *args, **kw
+    )
+  File "/Volumes/Project Drive/Python/enterprise-etl-pipeline/.venv/lib/python3.13/site-packages/sqlalchemy/engine/default.py", line 1417, in _init_compiled
+    compiled.construct_params(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        extracted_parameters=extracted_parameters,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Volumes/Project Drive/Python/enterprise-etl-pipeline/.venv/lib/python3.13/site-packages/sqlalchemy/sql/compiler.py", line 1934, in construct_params
+    raise exc.InvalidRequestError(
+    ...<3 lines>...
+    )
+sqlalchemy.exc.InvalidRequestError: A value is required for bind parameter 'updated_at' (Background on this error at: https://sqlalche.me/e/20/cd3x)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Volumes/Project Drive/Python/enterprise-etl-pipeline/src/etl/pipeline/run.py", line 42, in run_pipeline
+    loaded_count = load_products(df)
+  File "/Volumes/Project Drive/Python/enterprise-etl-pipeline/src/etl/loaders/postgres.py", line 74, in load_products
+    connection.execute(upsert_sql, records)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Volumes/Project Drive/Python/enterprise-etl-pipeline/.venv/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 1421, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "/Volumes/Project Drive/Python/enterprise-etl-pipeline/.venv/lib/python3.13/site-packages/sqlalchemy/sql/elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Volumes/Project Drive/Python/enterprise-etl-pipeline/.venv/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "/Volumes/Project Drive/Python/enterprise-etl-pipeline/.venv/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 1823, in _execute_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str(statement), parameters, None, None
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Volumes/Project Drive/Python/enterprise-etl-pipeline/.venv/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Volumes/Project Drive/Python/enterprise-etl-pipeline/.venv/lib/python3.13/site-packages/sqlalchemy/engine/base.py", line 1817, in _execute_context
+    context = constructor(
+        dialect, self, conn, execution_options, *args, **kw
+    )
+  File "/Volumes/Project Drive/Python/enterprise-etl-pipeline/.venv/lib/python3.13/site-packages/sqlalchemy/engine/default.py", line 1417, in _init_compiled
+    compiled.construct_params(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        extracted_parameters=extracted_parameters,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Volumes/Project Drive/Python/enterprise-etl-pipeline/.venv/lib/python3.13/site-packages/sqlalchemy/sql/compiler.py", line 1934, in construct_params
+    raise exc.InvalidRequestError(
+    ...<3 lines>...
+    )
+sqlalchemy.exc.StatementError: (sqlalchemy.exc.InvalidRequestError) A value is required for bind parameter 'updated_at'
+[SQL: 
+        INSERT INTO products (
+            product_id,
+            product_name,
+            description,
+            category,
+            price,
+            discount_percentage,
+            rating,
+            stock_quantity,
+            brand,
+            sku,
+            weight,
+            availability_status,
+            warranty_information,
+            shipping_information,
+            updated_at
+        )
+        VALUES (
+            %(product_id)s,
+            %(product_name)s,
+            %(description)s,
+            %(category)s,
+            %(price)s,
+            %(discount_percentage)s,
+            %(rating)s,
+            %(stock_quantity)s,
+            %(brand)s,
+            %(sku)s,
+            %(weight)s,
+            %(availability_status)s,
+            %(warranty_information)s,
+            %(shipping_information)s,
+            %(updated_at)s
+        )
+        ON CONFLICT (product_id)
+        DO UPDATE SET
+            product_name = EXCLUDED.product_name,
+            description = EXCLUDED.description,
+            category = EXCLUDED.category,
+            price = EXCLUDED.price,
+            discount_percentage = EXCLUDED.discount_percentage,
+            rating = EXCLUDED.rating,
+            stock_quantity = EXCLUDED.stock_quantity,
+            brand = EXCLUDED.brand,
+            sku = EXCLUDED.sku,
+            weight = EXCLUDED.weight,
+            availability_status = EXCLUDED.availability_status,
+            warranty_information = EXCLUDED.warranty_information,
+            shipping_information = EXCLUDED.shipping_information,
+            updated_at = EXCLUDED.updated_at
+        ]
+[parameters: [{'product_id': 1, 'product_name': 'Essence Mascara Lash Princess', 'description': 'The Essence Mascara Lash Princess is a popular mascara known for it ... (260 characters truncated) ... 1', 'weight': 4.0, 'availability_status': 'In Stock', 'warranty_information': '1 week warranty', 'shipping_information': 'Ships in 3-5 business days'}, {'product_id': 2, 'product_name': 'Eyeshadow Palette with Mirror', 'description': "The Eyeshadow Palette with Mirror offers a versatile range of eyesh ... (266 characters truncated) ... GLA-EYE-002', 'weight': 9.0, 'availability_status': 'In Stock', 'warranty_information': '1 year warranty', 'shipping_information': 'Ships in 2 weeks'}, {'product_id': 3, 'product_name': 'Powder Canister', 'description': 'The Powder Canister is a finely milled setting powder designed to set makeup and  ... (254 characters truncated) ... , 'weight': 8.0, 'availability_status': 'In Stock', 'warranty_information': '3 months warranty', 'shipping_information': 'Ships in 1-2 business days'}, {'product_id': 4, 'product_name': 'Red Lipstick', 'description': 'The Red Lipstick is a classic and bold choice for adding a pop of color to your lips ... (232 characters truncated) ... -CHI-LIP-004', 'weight': 1.0, 'availability_status': 'In Stock', 'warranty_information': '3 year warranty', 'shipping_information': 'Ships in 1 week'}, {'product_id': 5, 'product_name': 'Red Nail Polish', 'description': 'The Red Nail Polish offers a rich and glossy red hue for vibrant and polished nai ... (221 characters truncated) ... NAI-NAI-005', 'weight': 8.0, 'availability_status': 'In Stock', 'warranty_information': '1 month warranty', 'shipping_information': 'Ships overnight'}, {'product_id': 6, 'product_name': 'Calvin Klein CK One', 'description': "CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and ... (216 characters truncated) ... -CAL-CAL-006', 'weight': 7.0, 'availability_status': 'In Stock', 'warranty_information': '1 week warranty', 'shipping_information': 'Ships overnight'}, {'product_id': 7, 'product_name': 'Chanel Coco Noir Eau De', 'description': 'Coco Noir by Chanel is an elegant and mysterious fragrance, featuring not ... (214 characters truncated) ... -CHA-CHA-007', 'weight': 7.0, 'availability_status': 'In Stock', 'warranty_information': '3 year warranty', 'shipping_information': 'Ships overnight'}, {'product_id': 8, 'product_name': "Dior J'adore", 'description': "J'adore by Dior is a luxurious and floral fragrance, known for its blend of ylang-yl ... (207 characters truncated) ... DIO-DIO-008', 'weight': 4.0, 'availability_status': 'In Stock', 'warranty_information': '1 week warranty', 'shipping_information': 'Ships in 2 weeks'}, {'product_id': 9, 'product_name': 'Dolce Shine Eau de', 'description': "Dolce Shine by Dolce & Gabbana is a vibrant and fruity fragrance, featuring no ... (226 characters truncated) ... OL-DOL-009', 'weight': 6.0, 'availability_status': 'Low Stock', 'warranty_information': '3 year warranty', 'shipping_information': 'Ships in 1 month'}, {'product_id': 10, 'product_name': 'Gucci Bloom Eau de', 'description': "Gucci Bloom by Gucci is a floral and captivating fragrance, with notes of tub ... (214 characters truncated) ... UC-GUC-010', 'weight': 7.0, 'availability_status': 'In Stock', 'warranty_information': '6 months warranty', 'shipping_information': 'Ships overnight'}, {'product_id': 11, 'product_name': 'Annibale Colombo Bed', 'description': 'The Annibale Colombo Bed is a luxurious and elegant bed frame, crafted with ... (217 characters truncated) ... NN-ANN-011', 'weight': 10.0, 'availability_status': 'In Stock', 'warranty_information': '1 year warranty', 'shipping_information': 'Ships in 1 month'}, {'product_id': 12, 'product_name': 'Annibale Colombo Sofa', 'description': 'The Annibale Colombo Sofa is a sophisticated and comfortable seating optio ... (229 characters truncated) ... NN-ANN-012', 'weight': 6.0, 'availability_status': 'In Stock', 'warranty_information': 'Lifetime warranty', 'shipping_information': 'Ships in 1 week'}, {'product_id': 13, 'product_name': 'Bedside Table African Cherry', 'description': 'The Bedside Table in African Cherry is a stylish and functional add ... (232 characters truncated) ... -FUR-BED-013', 'weight': 2.0, 'availability_status': 'In Stock', 'warranty_information': '5 year warranty', 'shipping_information': 'Ships overnight'}, {'product_id': 14, 'product_name': 'Knoll Saarinen Executive Conference Chair', 'description': 'The Knoll Saarinen Executive Conference Chair is a mod ... (235 characters truncated) ... KNO-KNO-014', 'weight': 10.0, 'availability_status': 'In Stock', 'warranty_information': '2 year warranty', 'shipping_information': 'Ships overnight'}, {'product_id': 15, 'product_name': 'Wooden Bathroom Sink With Mirror', 'description': 'The Wooden Bathroom Sink with Mirror is a unique and stylish ad ... (240 characters truncated) ... , 'weight': 10.0, 'availability_status': 'Low Stock', 'warranty_information': '3 year warranty', 'shipping_information': 'Ships in 3-5 business days'}, {'product_id': 16, 'product_name': 'Apple', 'description': 'Fresh and crisp apples, perfect for snacking or incorporating into various recipes.', 'cat ... (130 characters truncated) ... BRD-APP-016', 'weight': 9.0, 'availability_status': 'In Stock', 'warranty_information': '3 year warranty', 'shipping_information': 'Ships in 2 weeks'}, {'product_id': 17, 'product_name': 'Beef Steak', 'description': 'High-quality beef steak, great for grilling or cooking to your preferred level of don ... (144 characters truncated) ... BRD-BEE-017', 'weight': 10.0, 'availability_status': 'In Stock', 'warranty_information': '3 year warranty', 'shipping_information': 'Ships overnight'}, {'product_id': 18, 'product_name': 'Cat Food', 'description': 'Nutritious cat food formulated to meet the dietary needs of your feline friend.', 'cate ... (129 characters truncated) ... BRD-FOO-018', 'weight': 10.0, 'availability_status': 'In Stock', 'warranty_information': '1 year warranty', 'shipping_information': 'Ships overnight'}, {'product_id': 19, 'product_name': 'Chicken Meat', 'description': 'Fresh and tender chicken meat, suitable for various culinary preparations.', 'categ ... (128 characters truncated) ... BRD-CHI-019', 'weight': 1.0, 'availability_status': 'In Stock', 'warranty_information': '1 year warranty', 'shipping_information': 'Ships in 1 month'}, {'product_id': 20, 'product_name': 'Cooking Oil', 'description': 'Versatile cooking oil suitable for frying, sautéing, and various culinary applicatio ... (151 characters truncated) ... , 'weight': 5.0, 'availability_status': 'In Stock', 'warranty_information': 'Lifetime warranty', 'shipping_information': 'Ships in 1-2 business days'}, {'product_id': 21, 'product_name': 'Cucumber', 'description': 'Crisp and hydrating cucumbers, ideal for salads, snacks, or as a refreshing side.', 'ca ... (141 characters truncated) ... 1', 'weight': 4.0, 'availability_status': 'In Stock', 'warranty_information': '2 year warranty', 'shipping_information': 'Ships in 1-2 business days'}, {'product_id': 22, 'product_name': 'Dog Food', 'description': 'Specially formulated dog food designed to provide essential nutrients for your canine c ... (155 characters truncated) ... -022', 'weight': 10.0, 'availability_status': 'In Stock', 'warranty_information': 'No warranty', 'shipping_information': 'Ships in 1-2 business days'}, {'product_id': 23, 'product_name': 'Eggs', 'description': 'Fresh eggs, a versatile ingredient for baking, cooking, or breakfast.', 'category': 'grocer ... (114 characters truncated) ... -BRD-EGG-023', 'weight': 2.0, 'availability_status': 'In Stock', 'warranty_information': '1 week warranty', 'shipping_information': 'Ships in 1 week'}, {'product_id': 24, 'product_name': 'Fish Steak', 'description': 'Quality fish steak, suitable for grilling, baking, or pan-searing.', 'category': 'gro ... (130 characters truncated) ... ', 'weight': 6.0, 'availability_status': 'In Stock', 'warranty_information': '1 month warranty', 'shipping_information': 'Ships in 3-5 business days'}, {'product_id': 25, 'product_name': 'Green Bell Pepper', 'description': 'Fresh and vibrant green bell pepper, perfect for adding color and flavor to yo ... (147 characters truncated) ... BRD-GRE-025', 'weight': 2.0, 'availability_status': 'In Stock', 'warranty_information': '1 month warranty', 'shipping_information': 'Ships in 1 week'}, {'product_id': 26, 'product_name': 'Green Chili Pepper', 'description': 'Spicy green chili pepper, ideal for adding heat to your favorite recipes.', ' ... (131 characters truncated) ... BRD-GRE-026', 'weight': 7.0, 'availability_status': 'Low Stock', 'warranty_information': '2 year warranty', 'shipping_information': 'Ships in 1 week'}, {'product_id': 27, 'product_name': 'Honey Jar', 'description': 'Pure and natural honey in a convenient jar, perfect for sweetening beverages or drizzl ... (162 characters truncated) ... ', 'weight': 2.0, 'availability_status': 'In Stock', 'warranty_information': '1 month warranty', 'shipping_information': 'Ships in 1-2 business days'}, {'product_id': 28, 'product_name': 'Ice Cream', 'description': 'Creamy and delicious ice cream, available in various flavors for a delightful treat.', ... (136 characters truncated) ... RD-CRE-028', 'weight': 1.0, 'availability_status': 'In Stock', 'warranty_information': '1 month warranty', 'shipping_information': 'Ships in 2 weeks'}, {'product_id': 29, 'product_name': 'Juice', 'description': 'Refreshing fruit juice, packed with vitamins and great for staying hydrated.', 'category': ... (125 characters truncated) ... RD-JUI-029', 'weight': 1.0, 'availability_status': 'In Stock', 'warranty_information': '6 months warranty', 'shipping_information': 'Ships in 1 week'}, {'product_id': 30, 'product_name': 'Kiwi', 'description': 'Nutrient-rich kiwi, perfect for snacking or adding a tropical twist to your dishes.', 'cate ... (131 characters truncated) ... RD-KIW-030', 'weight': 5.0, 'availability_status': 'In Stock', 'warranty_information': '6 months warranty', 'shipping_information': 'Ships overnight'}, {'product_id': 31, 'product_name': 'Lemon', 'description': 'Zesty and tangy lemons, versatile for cooking, baking, or making refreshing beverages.', ' ... (128 characters truncated) ... GRO-BRD-LEM-031', 'weight': 3.0, 'availability_status': 'In Stock', 'warranty_information': 'No warranty', 'shipping_information': 'Ships in 1 month'}, {'product_id': 32, 'product_name': 'Milk', 'description': 'Fresh and nutritious milk, a staple for various recipes and daily consumption.', 'category' ... (125 characters truncated) ... BRD-MIL-032', 'weight': 5.0, 'availability_status': 'In Stock', 'warranty_information': '3 year warranty', 'shipping_information': 'Ships in 2 weeks'}, {'product_id': 33, 'product_name': 'Mulberry', 'description': 'Sweet and juicy mulberries, perfect for snacking or adding to desserts and cereals.', ' ... (133 characters truncated) ... -BRD-MUL-033', 'weight': 5.0, 'availability_status': 'In Stock', 'warranty_information': '2 year warranty', 'shipping_information': 'Ships in 1 week'}, {'product_id': 34, 'product_name': 'Nescafe Coffee', 'description': 'Quality coffee from Nescafe, available in various blends for a rich and satisfyin ... (153 characters truncated) ... 4', 'weight': 6.0, 'availability_status': 'In Stock', 'warranty_information': '1 year warranty', 'shipping_information': 'Ships in 1-2 business days'}, {'product_id': 35, 'product_name': 'Potatoes', 'description': 'Versatile and starchy potatoes, great for roasting, mashing, or as a side dish.', 'cate ... (139 characters truncated) ... 5', 'weight': 9.0, 'availability_status': 'In Stock', 'warranty_information': '3 year warranty', 'shipping_information': 'Ships in 3-5 business days'}, {'product_id': 36, 'product_name': 'Protein Powder', 'description': 'Nutrient-packed protein powder, ideal for supplementing your diet with essential  ... (147 characters truncated) ... BRD-PRO-036', 'weight': 9.0, 'availability_status': 'In Stock', 'warranty_information': '1 week warranty', 'shipping_information': 'Ships in 1 month'}, {'product_id': 37, 'product_name': 'Red Onions', 'description': 'Flavorful and aromatic red onions, perfect for adding depth to your savory dishes.',  ... (143 characters truncated) ... ', 'weight': 9.0, 'availability_status': 'In Stock', 'warranty_information': '1 month warranty', 'shipping_information': 'Ships in 3-5 business days'}, {'product_id': 38, 'product_name': 'Rice', 'description': 'High-quality rice, a staple for various cuisines and a versatile base for many dishes.', 'c ... (133 characters truncated) ... RD-RIC-038', 'weight': 5.0, 'availability_status': 'In Stock', 'warranty_information': '6 months warranty', 'shipping_information': 'Ships overnight'}, {'product_id': 39, 'product_name': 'Soft Drinks', 'description': 'Assorted soft drinks in various flavors, perfect for refreshing beverages.', 'catego ... (130 characters truncated) ... D-SOF-039', 'weight': 9.0, 'availability_status': 'In Stock', 'warranty_information': '6 months warranty', 'shipping_information': 'Ships in 2 weeks'}, {'product_id': 40, 'product_name': 'Strawberry', 'description': 'Sweet and succulent strawberries, great for snacking, desserts, or blending into smoo ... (153 characters truncated) ... 0', 'weight': 1.0, 'availability_status': 'In Stock', 'warranty_information': '1 week warranty', 'shipping_information': 'Ships in 1-2 business days'}, {'product_id': 41, 'product_name': 'Tissue Paper Box', 'description': 'Convenient tissue paper box for everyday use, providing soft and absorbent tiss ... (148 characters truncated) ... S-041', 'weight': 1.0, 'availability_status': 'In Stock', 'warranty_information': 'No warranty', 'shipping_information': 'Ships in 1-2 business days'}, {'product_id': 42, 'product_name': 'Water', 'description': 'Pure and refreshing bottled water, essential for staying hydrated throughout the day.', 'c ... (135 characters truncated) ... D-WAT-042', 'weight': 4.0, 'availability_status': 'In Stock', 'warranty_information': '3 months warranty', 'shipping_information': 'Ships in 1 month'}, {'product_id': 43, 'product_name': 'Decoration Swing', 'description': 'The Decoration Swing is a charming addition to your home decor. Crafted with in ... (213 characters truncated) ... BRD-DEC-043', 'weight': 4.0, 'availability_status': 'In Stock', 'warranty_information': '1 week warranty', 'shipping_information': 'Ships in 1 month'}, {'product_id': 44, 'product_name': 'Family Tree Photo Frame', 'description': 'The Family Tree Photo Frame is a sentimental and stylish way to display  ... (243 characters truncated) ... RD-FAM-044', 'weight': 1.0, 'availability_status': 'In Stock', 'warranty_information': '1 month warranty', 'shipping_information': 'Ships in 2 weeks'}, {'product_id': 45, 'product_name': 'House Showpiece Plant', 'description': 'The House Showpiece Plant is an artificial plant that brings a touch of na ... (235 characters truncated) ... -BRD-HOU-045', 'weight': 8.0, 'availability_status': 'In Stock', 'warranty_information': '1 year warranty', 'shipping_information': 'Ships in 1 week'}, {'product_id': 46, 'product_name': 'Plant Pot', 'description': 'The Plant Pot is a stylish container for your favorite plants. With a sleek design, it ... (244 characters truncated) ... , 'weight': 9.0, 'availability_status': 'In Stock', 'warranty_information': 'Lifetime warranty', 'shipping_information': 'Ships in 3-5 business days'}, {'product_id': 47, 'product_name': 'Table Lamp', 'description': 'The Table Lamp is a functional and decorative lighting solution for your living space ... (248 characters truncated) ... , 'weight': 4.0, 'availability_status': 'In Stock', 'warranty_information': '3 months warranty', 'shipping_information': 'Ships in 1-2 business days'}, {'product_id': 48, 'product_name': 'Bamboo Spatula', 'description': 'The Bamboo Spatula is a versatile kitchen tool made from eco-friendly bamboo. Ide ... (201 characters truncated) ... BRD-BAM-048', 'weight': 3.0, 'availability_status': 'In Stock', 'warranty_information': '1 month warranty', 'shipping_information': 'Ships overnight'}, {'product_id': 49, 'product_name': 'Black Aluminium Cup', 'description': 'The Black Aluminium Cup is a stylish and durable cup suitable for both hot a ... (238 characters truncated) ... -BRD-BLA-049', 'weight': 7.0, 'availability_status': 'In Stock', 'warranty_information': '1 year warranty', 'shipping_information': 'Ships overnight'}, {'product_id': 50, 'product_name': 'Black Whisk', 'description': 'The Black Whisk is a kitchen essential for whisking and beating ingredients. Its erg ... (217 characters truncated) ... D-BLA-050', 'weight': 1.0, 'availability_status': 'In Stock', 'warranty_information': '3 months warranty', 'shipping_information': 'Ships in 1 month'} ... 94 parameters truncated ... {'product_id': 145, 'product_name': 'Cricket Wicket', 'description': 'The Cricket Wicket is a set of three stumps and two bails, forming a wicket used ... (228 characters truncated) ... RD-CRI-145', 'weight': 5.0, 'availability_status': 'In Stock', 'warranty_information': '3 months warranty', 'shipping_information': 'Ships overnight'}, {'product_id': 146, 'product_name': 'Feather Shuttlecock', 'description': 'The Feather Shuttlecock is used in the sport of badminton. It features natu ... (254 characters truncated) ... 6', 'weight': 4.0, 'availability_status': 'In Stock', 'warranty_information': '3 year warranty', 'shipping_information': 'Ships in 1-2 business days'}, {'product_id': 147, 'product_name': 'Football', 'description': 'The Football, also known as a soccer ball, is the standard ball used in the sport of f ... (217 characters truncated) ... RD-FOO-147', 'weight': 1.0, 'availability_status': 'In Stock', 'warranty_information': 'Lifetime warranty', 'shipping_information': 'Ships overnight'}, {'product_id': 148, 'product_name': 'Golf Ball', 'description': 'The Golf Ball is a small ball used in the sport of golf. It features dimples on its s ... (231 characters truncated) ... 8', 'weight': 3.0, 'availability_status': 'In Stock', 'warranty_information': '1 year warranty', 'shipping_information': 'Ships in 3-5 business days'}, {'product_id': 149, 'product_name': 'Iron Golf', 'description': 'The Iron Golf is a type of golf club designed for various golf shots. It features a s ... (236 characters truncated) ... D-IRO-149', 'weight': 2.0, 'availability_status': 'In Stock', 'warranty_information': '3 months warranty', 'shipping_information': 'Ships in 2 weeks'}, {'product_id': 150, 'product_name': 'Metal Baseball Bat', 'description': 'The Metal Baseball Bat is a durable and lightweight baseball bat made from m ... (231 characters truncated) ... -BRD-MET-150', 'weight': 7.0, 'availability_status': 'In Stock', 'warranty_information': '3 year warranty', 'shipping_information': 'Ships in 1 week'}, {'product_id': 151, 'product_name': 'Tennis Ball', 'description': 'The Tennis Ball is a standard ball used in the sport of tennis. It is designed for  ... (223 characters truncated) ... -BRD-TEN-151', 'weight': 3.0, 'availability_status': 'In Stock', 'warranty_information': '5 year warranty', 'shipping_information': 'Ships in 1 week'}, {'product_id': 152, 'product_name': 'Tennis Racket', 'description': 'The Tennis Racket is an essential piece of equipment used in the sport of tennis. ... (233 characters truncated) ... BRD-TEN-152', 'weight': 7.0, 'availability_status': 'Low Stock', 'warranty_information': '5 year warranty', 'shipping_information': 'Ships overnight'}, {'product_id': 153, 'product_name': 'Volleyball', 'description': 'The Volleyball is a standard ball used in the sport of volleyball. It is designed fo ... (221 characters truncated) ... -VOL-153', 'weight': 3.0, 'availability_status': 'Out of Stock', 'warranty_information': '1 week warranty', 'shipping_information': 'Ships in 1 week'}, {'product_id': 154, 'product_name': 'Black Sun Glasses', 'description': 'The Black Sun Glasses are a classic and stylish choice, featuring a sleek bla ... (240 characters truncated) ... A-154', 'weight': 1.0, 'availability_status': 'In Stock', 'warranty_information': 'No warranty', 'shipping_information': 'Ships in 1-2 business days'}, {'product_id': 155, 'product_name': 'Classic Sun Glasses', 'description': 'The Classic Sun Glasses offer a timeless design with a neutral frame and UV ... (238 characters truncated) ... -CLA-155', 'weight': 8.0, 'availability_status': 'Low Stock', 'warranty_information': '6 months warranty', 'shipping_information': 'Ships in 1 month'}, {'product_id': 156, 'product_name': 'Green and Black Glasses', 'description': 'The Green and Black Glasses feature a bold combination of green and bla ... (255 characters truncated) ... -FAS-GRE-156', 'weight': 7.0, 'availability_status': 'In Stock', 'warranty_information': '1 year warranty', 'shipping_information': 'Ships overnight'}, {'product_id': 157, 'product_name': 'Party Glasses', 'description': "The Party Glasses are designed to add flair to your party outfit. With unique sha ... (250 characters truncated) ... AS-PAR-157', 'weight': 9.0, 'availability_status': 'In Stock', 'warranty_information': '3 months warranty', 'shipping_information': 'Ships overnight'}, {'product_id': 158, 'product_name': 'Sunglasses', 'description': 'The Sunglasses offer a classic and simple design with a focus on functionality. Thes ... (240 characters truncated) ... 8', 'weight': 1.0, 'availability_status': 'In Stock', 'warranty_information': '3 year warranty', 'shipping_information': 'Ships in 3-5 business days'}, {'product_id': 159, 'product_name': 'iPad Mini 2021 Starlight', 'description': 'The iPad Mini 2021 in Starlight is a compact and powerful tablet from  ... (276 characters truncated) ... 9', 'weight': 5.0, 'availability_status': 'In Stock', 'warranty_information': '2 year warranty', 'shipping_information': 'Ships in 1-2 business days'}, {'product_id': 160, 'product_name': 'Samsung Galaxy Tab S8 Plus Grey', 'description': "The Samsung Galaxy Tab S8 Plus in Grey is a high-performance An ... (284 characters truncated) ... M-SAM-160', 'weight': 1.0, 'availability_status': 'In Stock', 'warranty_information': '3 months warranty', 'shipping_information': 'Ships in 2 weeks'}, {'product_id': 161, 'product_name': 'Samsung Galaxy Tab White', 'description': 'The Samsung Galaxy Tab in White is a sleek and versatile Android table ... (269 characters truncated) ... AM-SAM-161', 'weight': 5.0, 'availability_status': 'In Stock', 'warranty_information': '3 months warranty', 'shipping_information': 'Ships overnight'}, {'product_id': 162, 'product_name': 'Blue Frock', 'description': 'The Blue Frock is a charming and stylish dress for various occasions. With a vibrant ... (219 characters truncated) ... D-BLU-162', 'weight': 5.0, 'availability_status': 'In Stock', 'warranty_information': 'Lifetime warranty', 'shipping_information': 'Ships in 2 weeks'}, {'product_id': 163, 'product_name': 'Girl Summer Dress', 'description': "The Girl Summer Dress is a cute and breezy dress designed for warm weather. W ... (240 characters truncated) ... D-GIR-163', 'weight': 5.0, 'availability_status': 'In Stock', 'warranty_information': 'Lifetime warranty', 'shipping_information': 'Ships in 1 month'}, {'product_id': 164, 'product_name': 'Gray Dress', 'description': 'The Gray Dress is a versatile and chic option for various occasions. With a neutral  ... (240 characters truncated) ... RD-GRA-164', 'weight': 1.0, 'availability_status': 'In Stock', 'warranty_information': '1 month warranty', 'shipping_information': 'Ships in 1 month'}, {'product_id': 165, 'product_name': 'Short Frock', 'description': 'The Short Frock is a playful and trendy dress with a shorter length. Ideal for casu ... (231 characters truncated) ... ', 'weight': 10.0, 'availability_status': 'In Stock', 'warranty_information': '1 year warranty', 'shipping_information': 'Ships in 1-2 business days'}, {'product_id': 166, 'product_name': 'Tartan Dress', 'description': 'The Tartan Dress features a classic tartan pattern, bringing a timeless and sophis ... (231 characters truncated) ... BRD-TAR-166', 'weight': 8.0, 'availability_status': 'In Stock', 'warranty_information': '1 month warranty', 'shipping_information': 'Ships overnight'}, {'product_id': 167, 'product_name': '300 Touring', 'description': 'The 300 Touring is a stylish and comfortable sedan, known for its luxurious feature ... (170 characters truncated) ... CHR-TOU-167', 'weight': 9.0, 'availability_status': 'In Stock', 'warranty_information': '3 year warranty', 'shipping_information': 'Ships in 2 weeks'}, {'product_id': 168, 'product_name': 'Charger SXT RWD', 'description': 'The Charger SXT RWD is a powerful and sporty rear-wheel-drive sedan, offering a ... (192 characters truncated) ... ', 'weight': 6.0, 'availability_status': 'In Stock', 'warranty_information': '1 month warranty', 'shipping_information': 'Ships in 3-5 business days'}, {'product_id': 169, 'product_name': 'Dodge Hornet GT Plus', 'description': 'The Dodge Hornet GT Plus is a compact and agile hatchback, perfect for urb ... (180 characters truncated) ... DOD-DOD-169', 'weight': 8.0, 'availability_status': 'In Stock', 'warranty_information': '1 year warranty', 'shipping_information': 'Ships in 1 month'}, {'product_id': 170, 'product_name': 'Durango SXT RWD', 'description': 'The Durango SXT RWD is a spacious and versatile SUV, known for its strong perfo ... (179 characters truncated) ... DOD-DUR-170', 'weight': 1.0, 'availability_status': 'In Stock', 'warranty_information': '2 year warranty', 'shipping_information': 'Ships in 1 month'}, {'product_id': 171, 'product_name': 'Pacifica Touring', 'description': 'The Pacifica Touring is a stylish and well-equipped minivan, offering comfort  ... (182 characters truncated) ... CHR-PAC-171', 'weight': 9.0, 'availability_status': 'In Stock', 'warranty_information': '1 month warranty', 'shipping_information': 'Ships overnight'}, {'product_id': 172, 'product_name': "Blue Women's Handbag", 'description': "The Blue Women's Handbag is a stylish and spacious accessory for everyday  ... (245 characters truncated) ... -FAS-BLU-172', 'weight': 7.0, 'availability_status': 'In Stock', 'warranty_information': '1 year warranty', 'shipping_information': 'Ships in 1 week'}, {'product_id': 173, 'product_name': "Heshe Women's Leather Bag", 'description': "The Heshe Women's Leather Bag is a luxurious and high-quality leather ... (254 characters truncated) ... -HES-HES-173', 'weight': 3.0, 'availability_status': 'In Stock', 'warranty_information': '5 year warranty', 'shipping_information': 'Ships overnight'}, {'product_id': 174, 'product_name': 'Prada Women Bag', 'description': "The Prada Women Bag is an iconic designer bag that exudes elegance and luxury.  ... (255 characters truncated) ... 4', 'weight': 4.0, 'availability_status': 'In Stock', 'warranty_information': '3 year warranty', 'shipping_information': 'Ships in 1-2 business days'}, {'product_id': 175, 'product_name': 'White Faux Leather Backpack', 'description': "The White Faux Leather Backpack is a trendy and practical backpack  ... (270 characters truncated) ... -URB-WHI-175', 'weight': 7.0, 'availability_status': 'In Stock', 'warranty_information': '2 year warranty', 'shipping_information': 'Ships in 1 week'}, {'product_id': 176, 'product_name': 'Women Handbag Black', 'description': "The Women Handbag in Black is a classic and versatile accessory that comple ... (277 characters truncated) ... E-WOM-176', 'weight': 6.0, 'availability_status': 'In Stock', 'warranty_information': 'Lifetime warranty', 'shipping_information': 'Ships in 1 month'}, {'product_id': 177, 'product_name': "Black Women's Gown", 'description': "The Black Women's Gown is an elegant and timeless evening gown. With a sleek ... (248 characters truncated) ... RD-BLA-177', 'weight': 2.0, 'availability_status': 'In Stock', 'warranty_information': 'Lifetime warranty', 'shipping_information': 'Ships in 1 week'}, {'product_id': 178, 'product_name': 'Corset Leather With Skirt', 'description': 'The Corset Leather With Skirt is a bold and edgy ensemble that combin ... (259 characters truncated) ... -BRD-COR-178', 'weight': 1.0, 'availability_status': 'In Stock', 'warranty_information': '2 year warranty', 'shipping_information': 'Ships overnight'}, {'product_id': 179, 'product_name': 'Corset With Black Skirt', 'description': 'The Corset With Black Skirt is a chic and versatile outfit that pairs a ... (254 characters truncated) ... BRD-COR-179', 'weight': 7.0, 'availability_status': 'In Stock', 'warranty_information': '1 month warranty', 'shipping_information': 'Ships in 1 week'}, {'product_id': 180, 'product_name': 'Dress Pea', 'description': 'The Dress Pea is a stylish and comfortable dress with a pea pattern. Perfect for casu ... (252 characters truncated) ... BRD-DRE-180', 'weight': 1.0, 'availability_status': 'Low Stock', 'warranty_information': '2 year warranty', 'shipping_information': 'Ships overnight'}, {'product_id': 181, 'product_name': 'Marni Red & Black Suit', 'description': 'The Marni Red & Black Suit is a sophisticated and fashion-forward suit e ... (256 characters truncated) ... BRD-MAR-181', 'weight': 3.0, 'availability_status': 'In Stock', 'warranty_information': '5 year warranty', 'shipping_information': 'Ships in 2 weeks'}, {'product_id': 182, 'product_name': 'Green Crystal Earring', 'description': 'The Green Crystal Earring is a dazzling accessory that features a vibrant ... (281 characters truncated) ... 2', 'weight': 2.0, 'availability_status': 'In Stock', 'warranty_information': '5 year warranty', 'shipping_information': 'Ships in 3-5 business days'}, {'product_id': 183, 'product_name': 'Green Oval Earring', 'description': 'The Green Oval Earring is a stylish and versatile accessory with a unique ov ... (272 characters truncated) ...  'weight': 10.0, 'availability_status': 'In Stock', 'warranty_information': '3 months warranty', 'shipping_information': 'Ships in 3-5 business days'}, {'product_id': 184, 'product_name': 'Tropical Earring', 'description': "The Tropical Earring is a fun and playful accessory inspired by tropical eleme ... (260 characters truncated) ... ', 'weight': 3.0, 'availability_status': 'Low Stock', 'warranty_information': '3 year warranty', 'shipping_information': 'Ships in 1-2 business days'}, {'product_id': 185, 'product_name': 'Black & Brown Slipper', 'description': 'The Black & Brown Slipper is a comfortable and stylish choice for casual  ... (259 characters truncated) ... -BLA-185', 'weight': 5.0, 'availability_status': 'Low Stock', 'warranty_information': 'Lifetime warranty', 'shipping_information': 'Ships in 1 month'}, {'product_id': 186, 'product_name': 'Calvin Klein Heel Shoes', 'description': 'Calvin Klein Heel Shoes are elegant and sophisticated, designed for for ... (253 characters truncated) ... -CAL-CAL-186', 'weight': 6.0, 'availability_status': 'In Stock', 'warranty_information': '2 year warranty', 'shipping_information': 'Ships in 1 week'}, {'product_id': 187, 'product_name': 'Golden Shoes Woman', 'description': 'The Golden Shoes for Women are a glamorous choice for special occasions. Fea ... (236 characters truncated) ... S-GOL-187', 'weight': 4.0, 'availability_status': 'In Stock', 'warranty_information': '6 months warranty', 'shipping_information': 'Ships in 2 weeks'}, {'product_id': 188, 'product_name': 'Pampi Shoes', 'description': 'Pampi Shoes offer a blend of comfort and style for everyday use. With a versatile d ... (231 characters truncated) ... 'WOM-PAM-PAM-188', 'weight': 7.0, 'availability_status': 'In Stock', 'warranty_information': 'No warranty', 'shipping_information': 'Ships in 1 week'}, {'product_id': 189, 'product_name': 'Red Shoes', 'description': 'The Red Shoes make a bold statement with their vibrant red color. Whether for a party ... (231 characters truncated) ... M-FAS-SHO-189', 'weight': 10.0, 'availability_status': 'Low Stock', 'warranty_information': 'No warranty', 'shipping_information': 'Ships in 1 month'}, {'product_id': 190, 'product_name': 'IWC Ingenieur Automatic Steel', 'description': 'The IWC Ingenieur Automatic Steel watch is a durable and sophisti ... (268 characters truncated) ... -IWC-ING-190', 'weight': 3.0, 'availability_status': 'In Stock', 'warranty_information': '1 year warranty', 'shipping_information': 'Ships overnight'}, {'product_id': 191, 'product_name': 'Rolex Cellini Moonphase', 'description': 'The Rolex Cellini Moonphase watch is a masterpiece of horology. Featuri ... (251 characters truncated) ... OL-ROL-191', 'weight': 10.0, 'availability_status': 'In Stock', 'warranty_information': '1 month warranty', 'shipping_information': 'Ships in 1 week'}, {'product_id': 192, 'product_name': 'Rolex Datejust Women', 'description': "The Rolex Datejust Women's watch is an iconic timepiece designed for women ... (242 characters truncated) ... OL-ROL-192', 'weight': 3.0, 'availability_status': 'Low Stock', 'warranty_information': '5 year warranty', 'shipping_information': 'Ships in 2 weeks'}, {'product_id': 193, 'product_name': 'Watch Gold for Women', 'description': "The Gold Women's Watch is a stunning accessory that combines luxury and st ... (262 characters truncated) ... 'weight': 1.0, 'availability_status': 'Out of Stock', 'warranty_information': '2 year warranty', 'shipping_information': 'Ships in 1-2 business days'}, {'product_id': 194, 'product_name': "Women's Wrist Watch", 'description': "The Women's Wrist Watch is a versatile and fashionable timepiece for everyd ... (250 characters truncated) ... FAS-WOM-194', 'weight': 1.0, 'availability_status': 'In Stock', 'warranty_information': '1 year warranty', 'shipping_information': 'Ships in 2 weeks'}]]
+(Background on this error at: https://sqlalche.me/e/20/cd3x)
+2026-10-04 22:02:14 | INFO | stripe | page_downloaded | endpoint=customers page=1 rows=2
+2026-10-04 22:02:14 | INFO | stripe | page_downloaded | endpoint=customers page=2 rows=1
+2026-10-04 22:02:14 | INFO | salesforce | query_done | rows=2
+2026-10-04 22:02:14 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:02:14 | INFO | stripe | page_downloaded | endpoint=customers page=1 rows=1
+2026-10-04 22:02:14 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:02:14 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:02:14 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:02:14 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:02:14 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:02:14 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:32 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:02:32 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:32 | INFO | db_loader | upsert_skipped_empty | table=customers
+2026-10-04 22:02:32 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:32 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:02:32 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:02:32 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:32 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:02:32 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:32 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:32 | INFO | db_loader | upsert_ok | table=transactions rows=1
+2026-10-04 22:02:32 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:33 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:33 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:33 | INFO | pipeline | pipeline_start | incremental=False since=None
+2026-10-04 22:02:33 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:02:33 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:02:33 | INFO | salesforce | demo_mode | detail=reading data/sample/salesforce_*.json
+2026-10-04 22:02:33 | INFO | salesforce | extract_done | accounts=2 opportunities=2
+2026-10-04 22:02:33 | INFO | s3_loader | raw_saved | source=stripe rows=7 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/stripe/2026/10/04/163233.json
+2026-10-04 22:02:33 | INFO | s3_loader | raw_saved | source=salesforce rows=4 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/salesforce/2026/10/04/163233.json
+2026-10-04 22:02:33 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_bad errors=1
+2026-10-04 22:02:33 | INFO | cleaner | cleaned | source=stripe_customers rows=3
+2026-10-04 22:02:33 | INFO | cleaner | cleaned | source=stripe_charges rows=3
+2026-10-04 22:02:33 | INFO | cleaner | cleaned | source=salesforce_accounts rows=2
+2026-10-04 22:02:33 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=2
+2026-10-04 22:02:33 | INFO | mapper | unified | table=UnifiedCustomer rows=5
+2026-10-04 22:02:33 | INFO | mapper | unified | table=UnifiedTransaction rows=5
+2026-10-04 22:02:33 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:33 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:02:33 | INFO | db_loader | upsert_ok | table=transactions rows=5
+2026-10-04 22:02:33 | INFO | pipeline | pipeline_complete | stripe_raw=7 salesforce_raw=4 customers_loaded=5 transactions_loaded=5
+2026-10-04 22:02:33 | WARNING | alerts | slack_skipped | reason=SLACK_WEBHOOK_URL is empty
+2026-10-04 22:02:33 | INFO | pipeline | pipeline_start | incremental=False since=None
+2026-10-04 22:02:33 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:02:33 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:02:33 | INFO | salesforce | demo_mode | detail=reading data/sample/salesforce_*.json
+2026-10-04 22:02:33 | INFO | salesforce | extract_done | accounts=2 opportunities=2
+2026-10-04 22:02:33 | INFO | s3_loader | raw_saved | source=stripe rows=7 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/stripe/2026/10/04/163233.json
+2026-10-04 22:02:33 | INFO | s3_loader | raw_saved | source=salesforce rows=4 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/salesforce/2026/10/04/163233.json
+2026-10-04 22:02:33 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_bad errors=1
+2026-10-04 22:02:33 | INFO | cleaner | cleaned | source=stripe_customers rows=3
+2026-10-04 22:02:33 | INFO | cleaner | cleaned | source=stripe_charges rows=3
+2026-10-04 22:02:33 | INFO | cleaner | cleaned | source=salesforce_accounts rows=2
+2026-10-04 22:02:33 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=2
+2026-10-04 22:02:33 | INFO | mapper | unified | table=UnifiedCustomer rows=5
+2026-10-04 22:02:33 | INFO | mapper | unified | table=UnifiedTransaction rows=5
+2026-10-04 22:02:33 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:33 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:02:33 | INFO | db_loader | upsert_ok | table=transactions rows=5
+2026-10-04 22:02:33 | INFO | pipeline | pipeline_complete | stripe_raw=7 salesforce_raw=4 customers_loaded=5 transactions_loaded=5
+2026-10-04 22:02:33 | WARNING | alerts | slack_skipped | reason=SLACK_WEBHOOK_URL is empty
+2026-10-04 22:02:33 | INFO | cleaner | cleaned | source=stripe_customers rows=1
+2026-10-04 22:02:33 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_2 errors=1
+2026-10-04 22:02:33 | INFO | cleaner | cleaned | source=stripe_customers rows=1
+2026-10-04 22:02:33 | INFO | cleaner | cleaned | source=stripe_charges rows=2
+2026-10-04 22:02:33 | INFO | cleaner | cleaned | source=salesforce_accounts rows=1
+2026-10-04 22:02:33 | INFO | cleaner | cleaned | source=stripe_customers rows=1
+2026-10-04 22:02:33 | INFO | cleaner | cleaned | source=salesforce_accounts rows=1
+2026-10-04 22:02:33 | INFO | mapper | unified | table=UnifiedCustomer rows=2
+2026-10-04 22:02:33 | INFO | cleaner | cleaned | source=stripe_charges rows=2
+2026-10-04 22:02:33 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=1
+2026-10-04 22:02:33 | INFO | mapper | unified | table=UnifiedTransaction rows=2
+2026-10-04 22:02:41 | INFO | stripe | page_downloaded | endpoint=customers page=1 rows=2
+2026-10-04 22:02:41 | INFO | stripe | page_downloaded | endpoint=customers page=2 rows=1
+2026-10-04 22:02:41 | INFO | salesforce | query_done | rows=2
+2026-10-04 22:02:41 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:02:41 | INFO | stripe | page_downloaded | endpoint=customers page=1 rows=1
+2026-10-04 22:02:41 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:02:41 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:02:41 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:02:41 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:02:41 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:02:41 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:41 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:02:41 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:41 | INFO | db_loader | upsert_skipped_empty | table=customers
+2026-10-04 22:02:41 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:41 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:02:41 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:02:41 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:41 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:02:41 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:41 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:41 | INFO | db_loader | upsert_ok | table=transactions rows=1
+2026-10-04 22:02:41 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:41 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:41 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:41 | INFO | pipeline | pipeline_start | incremental=False since=None
+2026-10-04 22:02:41 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:02:41 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:02:41 | INFO | salesforce | demo_mode | detail=reading data/sample/salesforce_*.json
+2026-10-04 22:02:41 | INFO | salesforce | extract_done | accounts=2 opportunities=2
+2026-10-04 22:02:41 | INFO | s3_loader | raw_saved | source=stripe rows=7 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/stripe/2026/10/04/163241.json
+2026-10-04 22:02:41 | INFO | s3_loader | raw_saved | source=salesforce rows=4 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/salesforce/2026/10/04/163241.json
+2026-10-04 22:02:41 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_bad errors=1
+2026-10-04 22:02:41 | INFO | cleaner | cleaned | source=stripe_customers rows=3
+2026-10-04 22:02:41 | INFO | cleaner | cleaned | source=stripe_charges rows=3
+2026-10-04 22:02:41 | INFO | cleaner | cleaned | source=salesforce_accounts rows=2
+2026-10-04 22:02:41 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=2
+2026-10-04 22:02:41 | INFO | mapper | unified | table=UnifiedCustomer rows=5
+2026-10-04 22:02:41 | INFO | mapper | unified | table=UnifiedTransaction rows=5
+2026-10-04 22:02:41 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:41 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:02:41 | INFO | db_loader | upsert_ok | table=transactions rows=5
+2026-10-04 22:02:41 | INFO | pipeline | pipeline_complete | stripe_raw=7 salesforce_raw=4 customers_loaded=5 transactions_loaded=5
+2026-10-04 22:02:41 | WARNING | alerts | slack_skipped | reason=SLACK_WEBHOOK_URL is empty
+2026-10-04 22:02:41 | INFO | pipeline | pipeline_start | incremental=False since=None
+2026-10-04 22:02:41 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:02:41 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:02:41 | INFO | salesforce | demo_mode | detail=reading data/sample/salesforce_*.json
+2026-10-04 22:02:41 | INFO | salesforce | extract_done | accounts=2 opportunities=2
+2026-10-04 22:02:41 | INFO | s3_loader | raw_saved | source=stripe rows=7 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/stripe/2026/10/04/163241.json
+2026-10-04 22:02:41 | INFO | s3_loader | raw_saved | source=salesforce rows=4 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/salesforce/2026/10/04/163241.json
+2026-10-04 22:02:41 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_bad errors=1
+2026-10-04 22:02:41 | INFO | cleaner | cleaned | source=stripe_customers rows=3
+2026-10-04 22:02:41 | INFO | cleaner | cleaned | source=stripe_charges rows=3
+2026-10-04 22:02:41 | INFO | cleaner | cleaned | source=salesforce_accounts rows=2
+2026-10-04 22:02:41 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=2
+2026-10-04 22:02:41 | INFO | mapper | unified | table=UnifiedCustomer rows=5
+2026-10-04 22:02:41 | INFO | mapper | unified | table=UnifiedTransaction rows=5
+2026-10-04 22:02:41 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:41 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:02:41 | INFO | db_loader | upsert_ok | table=transactions rows=5
+2026-10-04 22:02:41 | INFO | pipeline | pipeline_complete | stripe_raw=7 salesforce_raw=4 customers_loaded=5 transactions_loaded=5
+2026-10-04 22:02:41 | WARNING | alerts | slack_skipped | reason=SLACK_WEBHOOK_URL is empty
+2026-10-04 22:02:41 | INFO | cleaner | cleaned | source=stripe_customers rows=1
+2026-10-04 22:02:41 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_2 errors=1
+2026-10-04 22:02:41 | INFO | cleaner | cleaned | source=stripe_customers rows=1
+2026-10-04 22:02:41 | INFO | cleaner | cleaned | source=stripe_charges rows=2
+2026-10-04 22:02:41 | INFO | cleaner | cleaned | source=salesforce_accounts rows=1
+2026-10-04 22:02:41 | INFO | cleaner | cleaned | source=stripe_customers rows=1
+2026-10-04 22:02:41 | INFO | cleaner | cleaned | source=salesforce_accounts rows=1
+2026-10-04 22:02:41 | INFO | mapper | unified | table=UnifiedCustomer rows=2
+2026-10-04 22:02:41 | INFO | cleaner | cleaned | source=stripe_charges rows=2
+2026-10-04 22:02:41 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=1
+2026-10-04 22:02:41 | INFO | mapper | unified | table=UnifiedTransaction rows=2
+2026-10-04 22:02:42 | INFO | pipeline | pipeline_start | incremental=False since=None
+2026-10-04 22:02:42 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:02:42 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:02:42 | INFO | salesforce | demo_mode | detail=reading data/sample/salesforce_*.json
+2026-10-04 22:02:42 | INFO | salesforce | extract_done | accounts=2 opportunities=2
+2026-10-04 22:02:42 | INFO | s3_loader | raw_saved | source=stripe rows=7 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/stripe/2026/10/04/163242.json
+2026-10-04 22:02:42 | INFO | s3_loader | raw_saved | source=salesforce rows=4 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/salesforce/2026/10/04/163242.json
+2026-10-04 22:02:42 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_bad errors=1
+2026-10-04 22:02:42 | INFO | cleaner | cleaned | source=stripe_customers rows=3
+2026-10-04 22:02:42 | INFO | cleaner | cleaned | source=stripe_charges rows=3
+2026-10-04 22:02:42 | INFO | cleaner | cleaned | source=salesforce_accounts rows=2
+2026-10-04 22:02:42 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=2
+2026-10-04 22:02:42 | INFO | mapper | unified | table=UnifiedCustomer rows=5
+2026-10-04 22:02:42 | INFO | mapper | unified | table=UnifiedTransaction rows=5
+2026-10-04 22:02:42 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:42 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:02:42 | INFO | db_loader | upsert_ok | table=transactions rows=5
+2026-10-04 22:02:42 | INFO | pipeline | pipeline_complete | stripe_raw=7 salesforce_raw=4 customers_loaded=5 transactions_loaded=5
+2026-10-04 22:02:42 | WARNING | alerts | slack_skipped | reason=SLACK_WEBHOOK_URL is empty
+2026-10-04 22:02:53 | INFO | stripe | page_downloaded | endpoint=customers page=1 rows=2
+2026-10-04 22:02:53 | INFO | stripe | page_downloaded | endpoint=customers page=2 rows=1
+2026-10-04 22:02:53 | INFO | salesforce | query_done | rows=2
+2026-10-04 22:02:53 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:02:53 | INFO | stripe | page_downloaded | endpoint=customers page=1 rows=1
+2026-10-04 22:02:53 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:02:53 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:02:53 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:02:53 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:02:53 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:02:53 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:53 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:02:53 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:53 | INFO | db_loader | upsert_skipped_empty | table=customers
+2026-10-04 22:02:53 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:54 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:02:54 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:02:54 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:54 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:02:54 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:54 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:54 | INFO | db_loader | upsert_ok | table=transactions rows=1
+2026-10-04 22:02:54 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:54 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:54 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:54 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:54 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:02:54 | INFO | pipeline | pipeline_start | incremental=False since=None
+2026-10-04 22:02:54 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:02:54 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:02:54 | INFO | salesforce | demo_mode | detail=reading data/sample/salesforce_*.json
+2026-10-04 22:02:54 | INFO | salesforce | extract_done | accounts=2 opportunities=2
+2026-10-04 22:02:54 | INFO | s3_loader | raw_saved | source=stripe rows=7 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/stripe/2026/10/04/163254.json
+2026-10-04 22:02:54 | INFO | s3_loader | raw_saved | source=salesforce rows=4 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/salesforce/2026/10/04/163254.json
+2026-10-04 22:02:54 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_bad errors=1
+2026-10-04 22:02:54 | INFO | cleaner | cleaned | source=stripe_customers rows=3
+2026-10-04 22:02:54 | INFO | cleaner | cleaned | source=stripe_charges rows=3
+2026-10-04 22:02:54 | INFO | cleaner | cleaned | source=salesforce_accounts rows=2
+2026-10-04 22:02:54 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=2
+2026-10-04 22:02:54 | INFO | mapper | unified | table=UnifiedCustomer rows=5
+2026-10-04 22:02:54 | INFO | mapper | unified | table=UnifiedTransaction rows=5
+2026-10-04 22:02:54 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:54 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:02:54 | INFO | db_loader | upsert_ok | table=transactions rows=5
+2026-10-04 22:02:54 | INFO | pipeline | pipeline_complete | stripe_raw=7 salesforce_raw=4 customers_loaded=5 transactions_loaded=5
+2026-10-04 22:02:54 | WARNING | alerts | slack_skipped | reason=SLACK_WEBHOOK_URL is empty
+2026-10-04 22:02:54 | INFO | pipeline | pipeline_start | incremental=False since=None
+2026-10-04 22:02:54 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:02:54 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:02:54 | INFO | salesforce | demo_mode | detail=reading data/sample/salesforce_*.json
+2026-10-04 22:02:54 | INFO | salesforce | extract_done | accounts=2 opportunities=2
+2026-10-04 22:02:54 | INFO | s3_loader | raw_saved | source=stripe rows=7 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/stripe/2026/10/04/163254.json
+2026-10-04 22:02:54 | INFO | s3_loader | raw_saved | source=salesforce rows=4 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/salesforce/2026/10/04/163254.json
+2026-10-04 22:02:54 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_bad errors=1
+2026-10-04 22:02:54 | INFO | cleaner | cleaned | source=stripe_customers rows=3
+2026-10-04 22:02:54 | INFO | cleaner | cleaned | source=stripe_charges rows=3
+2026-10-04 22:02:54 | INFO | cleaner | cleaned | source=salesforce_accounts rows=2
+2026-10-04 22:02:54 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=2
+2026-10-04 22:02:54 | INFO | mapper | unified | table=UnifiedCustomer rows=5
+2026-10-04 22:02:54 | INFO | mapper | unified | table=UnifiedTransaction rows=5
+2026-10-04 22:02:54 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:54 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:02:54 | INFO | db_loader | upsert_ok | table=transactions rows=5
+2026-10-04 22:02:54 | INFO | pipeline | pipeline_complete | stripe_raw=7 salesforce_raw=4 customers_loaded=5 transactions_loaded=5
+2026-10-04 22:02:54 | WARNING | alerts | slack_skipped | reason=SLACK_WEBHOOK_URL is empty
+2026-10-04 22:02:54 | INFO | cleaner | cleaned | source=stripe_customers rows=1
+2026-10-04 22:02:54 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_2 errors=1
+2026-10-04 22:02:54 | INFO | cleaner | cleaned | source=stripe_customers rows=1
+2026-10-04 22:02:54 | INFO | cleaner | cleaned | source=stripe_charges rows=2
+2026-10-04 22:02:54 | INFO | cleaner | cleaned | source=salesforce_accounts rows=1
+2026-10-04 22:02:54 | INFO | cleaner | cleaned | source=stripe_customers rows=1
+2026-10-04 22:02:54 | INFO | cleaner | cleaned | source=salesforce_accounts rows=1
+2026-10-04 22:02:54 | INFO | mapper | unified | table=UnifiedCustomer rows=2
+2026-10-04 22:02:54 | INFO | cleaner | cleaned | source=stripe_charges rows=2
+2026-10-04 22:02:54 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=1
+2026-10-04 22:02:54 | INFO | mapper | unified | table=UnifiedTransaction rows=2
+2026-10-04 22:02:54 | INFO | pipeline | pipeline_start | incremental=False since=None
+2026-10-04 22:02:54 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:02:54 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:02:54 | INFO | salesforce | demo_mode | detail=reading data/sample/salesforce_*.json
+2026-10-04 22:02:54 | INFO | salesforce | extract_done | accounts=2 opportunities=2
+2026-10-04 22:02:54 | INFO | s3_loader | raw_saved | source=stripe rows=7 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/stripe/2026/10/04/163254.json
+2026-10-04 22:02:54 | INFO | s3_loader | raw_saved | source=salesforce rows=4 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/salesforce/2026/10/04/163254.json
+2026-10-04 22:02:54 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_bad errors=1
+2026-10-04 22:02:54 | INFO | cleaner | cleaned | source=stripe_customers rows=3
+2026-10-04 22:02:54 | INFO | cleaner | cleaned | source=stripe_charges rows=3
+2026-10-04 22:02:54 | INFO | cleaner | cleaned | source=salesforce_accounts rows=2
+2026-10-04 22:02:54 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=2
+2026-10-04 22:02:54 | INFO | mapper | unified | table=UnifiedCustomer rows=5
+2026-10-04 22:02:54 | INFO | mapper | unified | table=UnifiedTransaction rows=5
+2026-10-04 22:02:54 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:02:54 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:02:54 | INFO | db_loader | upsert_ok | table=transactions rows=5
+2026-10-04 22:02:54 | INFO | pipeline | pipeline_complete | stripe_raw=7 salesforce_raw=4 customers_loaded=5 transactions_loaded=5
+2026-10-04 22:02:54 | WARNING | alerts | slack_skipped | reason=SLACK_WEBHOOK_URL is empty
+2026-10-04 22:02:55 | INFO | stripe | page_downloaded | endpoint=customers page=1 rows=2
+2026-10-04 22:02:55 | INFO | stripe | page_downloaded | endpoint=customers page=2 rows=1
+2026-10-04 22:02:55 | INFO | salesforce | query_done | rows=2
+2026-10-04 22:02:55 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:02:55 | INFO | stripe | page_downloaded | endpoint=customers page=1 rows=1
+2026-10-04 22:02:55 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:02:55 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:02:55 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:02:55 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:02:55 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:02:55 | INFO | cleaner | cleaned | source=stripe_customers rows=1
+2026-10-04 22:02:55 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_2 errors=1
+2026-10-04 22:02:55 | INFO | cleaner | cleaned | source=stripe_customers rows=1
+2026-10-04 22:02:55 | INFO | cleaner | cleaned | source=stripe_charges rows=2
+2026-10-04 22:02:55 | INFO | cleaner | cleaned | source=salesforce_accounts rows=1
+2026-10-04 22:02:55 | INFO | cleaner | cleaned | source=stripe_customers rows=1
+2026-10-04 22:02:55 | INFO | cleaner | cleaned | source=salesforce_accounts rows=1
+2026-10-04 22:02:55 | INFO | mapper | unified | table=UnifiedCustomer rows=2
+2026-10-04 22:02:55 | INFO | cleaner | cleaned | source=stripe_charges rows=2
+2026-10-04 22:02:55 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=1
+2026-10-04 22:02:55 | INFO | mapper | unified | table=UnifiedTransaction rows=2
+2026-10-04 22:08:06 | INFO | pipeline | pipeline_start | incremental=False since=None
+2026-10-04 22:08:06 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:08:06 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:08:06 | INFO | salesforce | demo_mode | detail=reading data/sample/salesforce_*.json
+2026-10-04 22:08:06 | INFO | salesforce | extract_done | accounts=2 opportunities=2
+2026-10-04 22:08:06 | INFO | s3_loader | raw_saved | source=stripe rows=7 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/stripe/2026/10/04/163806.json
+2026-10-04 22:08:06 | INFO | s3_loader | raw_saved | source=salesforce rows=4 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/salesforce/2026/10/04/163806.json
+2026-10-04 22:08:06 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_bad errors=1
+2026-10-04 22:08:06 | INFO | cleaner | cleaned | source=stripe_customers rows=3
+2026-10-04 22:08:06 | INFO | cleaner | cleaned | source=stripe_charges rows=3
+2026-10-04 22:08:06 | INFO | cleaner | cleaned | source=salesforce_accounts rows=2
+2026-10-04 22:08:06 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=2
+2026-10-04 22:08:06 | INFO | mapper | unified | table=UnifiedCustomer rows=5
+2026-10-04 22:08:06 | INFO | mapper | unified | table=UnifiedTransaction rows=5
+2026-10-04 22:08:06 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:08:07 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:08:07 | INFO | db_loader | upsert_ok | table=transactions rows=5
+2026-10-04 22:08:07 | INFO | pipeline | pipeline_complete | stripe_raw=7 salesforce_raw=4 customers_loaded=5 transactions_loaded=5
+2026-10-04 22:08:07 | WARNING | alerts | slack_skipped | reason=SLACK_WEBHOOK_URL is empty
+2026-10-04 22:08:19 | INFO | stripe | page_downloaded | endpoint=customers page=1 rows=2
+2026-10-04 22:08:19 | INFO | stripe | page_downloaded | endpoint=customers page=2 rows=1
+2026-10-04 22:08:19 | INFO | salesforce | query_done | rows=2
+2026-10-04 22:08:19 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:08:19 | INFO | stripe | page_downloaded | endpoint=customers page=1 rows=1
+2026-10-04 22:08:19 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:08:19 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:08:19 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:08:19 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:08:19 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:08:19 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:08:19 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:08:19 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:08:19 | INFO | db_loader | upsert_skipped_empty | table=customers
+2026-10-04 22:08:19 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:08:19 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:08:19 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:08:19 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:08:19 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:08:19 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:08:19 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:08:19 | INFO | db_loader | upsert_ok | table=transactions rows=1
+2026-10-04 22:08:19 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:08:19 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:08:19 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:08:19 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:08:19 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:08:19 | INFO | pipeline | pipeline_start | incremental=False since=None
+2026-10-04 22:08:19 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:08:19 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:08:19 | INFO | salesforce | demo_mode | detail=reading data/sample/salesforce_*.json
+2026-10-04 22:08:19 | INFO | salesforce | extract_done | accounts=2 opportunities=2
+2026-10-04 22:08:19 | INFO | s3_loader | raw_saved | source=stripe rows=7 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/stripe/2026/10/04/163819.json
+2026-10-04 22:08:19 | INFO | s3_loader | raw_saved | source=salesforce rows=4 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/salesforce/2026/10/04/163819.json
+2026-10-04 22:08:19 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_bad errors=1
+2026-10-04 22:08:19 | INFO | cleaner | cleaned | source=stripe_customers rows=3
+2026-10-04 22:08:19 | INFO | cleaner | cleaned | source=stripe_charges rows=3
+2026-10-04 22:08:19 | INFO | cleaner | cleaned | source=salesforce_accounts rows=2
+2026-10-04 22:08:19 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=2
+2026-10-04 22:08:19 | INFO | mapper | unified | table=UnifiedCustomer rows=5
+2026-10-04 22:08:19 | INFO | mapper | unified | table=UnifiedTransaction rows=5
+2026-10-04 22:08:19 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:08:19 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:08:19 | INFO | db_loader | upsert_ok | table=transactions rows=5
+2026-10-04 22:08:19 | INFO | pipeline | pipeline_complete | stripe_raw=7 salesforce_raw=4 customers_loaded=5 transactions_loaded=5
+2026-10-04 22:08:19 | WARNING | alerts | slack_skipped | reason=SLACK_WEBHOOK_URL is empty
+2026-10-04 22:08:19 | INFO | pipeline | pipeline_start | incremental=False since=None
+2026-10-04 22:08:19 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:08:19 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:08:19 | INFO | salesforce | demo_mode | detail=reading data/sample/salesforce_*.json
+2026-10-04 22:08:19 | INFO | salesforce | extract_done | accounts=2 opportunities=2
+2026-10-04 22:08:19 | INFO | s3_loader | raw_saved | source=stripe rows=7 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/stripe/2026/10/04/163819.json
+2026-10-04 22:08:19 | INFO | s3_loader | raw_saved | source=salesforce rows=4 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/salesforce/2026/10/04/163819.json
+2026-10-04 22:08:19 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_bad errors=1
+2026-10-04 22:08:19 | INFO | cleaner | cleaned | source=stripe_customers rows=3
+2026-10-04 22:08:19 | INFO | cleaner | cleaned | source=stripe_charges rows=3
+2026-10-04 22:08:19 | INFO | cleaner | cleaned | source=salesforce_accounts rows=2
+2026-10-04 22:08:19 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=2
+2026-10-04 22:08:19 | INFO | mapper | unified | table=UnifiedCustomer rows=5
+2026-10-04 22:08:19 | INFO | mapper | unified | table=UnifiedTransaction rows=5
+2026-10-04 22:08:19 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:08:19 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:08:19 | INFO | db_loader | upsert_ok | table=transactions rows=5
+2026-10-04 22:08:19 | INFO | pipeline | pipeline_complete | stripe_raw=7 salesforce_raw=4 customers_loaded=5 transactions_loaded=5
+2026-10-04 22:08:19 | WARNING | alerts | slack_skipped | reason=SLACK_WEBHOOK_URL is empty
+2026-10-04 22:08:19 | INFO | cleaner | cleaned | source=stripe_customers rows=1
+2026-10-04 22:08:19 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_2 errors=1
+2026-10-04 22:08:19 | INFO | cleaner | cleaned | source=stripe_customers rows=1
+2026-10-04 22:08:19 | INFO | cleaner | cleaned | source=stripe_charges rows=2
+2026-10-04 22:08:19 | INFO | cleaner | cleaned | source=salesforce_accounts rows=1
+2026-10-04 22:08:19 | INFO | cleaner | cleaned | source=stripe_customers rows=1
+2026-10-04 22:08:19 | INFO | cleaner | cleaned | source=salesforce_accounts rows=1
+2026-10-04 22:08:19 | INFO | mapper | unified | table=UnifiedCustomer rows=2
+2026-10-04 22:08:19 | INFO | cleaner | cleaned | source=stripe_charges rows=2
+2026-10-04 22:08:19 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=1
+2026-10-04 22:08:19 | INFO | mapper | unified | table=UnifiedTransaction rows=2
+2026-10-04 22:16:03 | INFO | stripe | page_downloaded | endpoint=customers page=1 rows=2
+2026-10-04 22:16:03 | INFO | stripe | page_downloaded | endpoint=customers page=2 rows=1
+2026-10-04 22:16:03 | INFO | salesforce | query_done | rows=2
+2026-10-04 22:16:03 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:16:03 | INFO | stripe | page_downloaded | endpoint=customers page=1 rows=1
+2026-10-04 22:16:03 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:16:03 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:16:03 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:16:03 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:16:03 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:16:03 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:16:04 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:16:04 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:16:04 | INFO | db_loader | upsert_skipped_empty | table=customers
+2026-10-04 22:16:04 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:16:04 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:16:04 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:16:04 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:16:04 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:16:04 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:16:04 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:16:04 | INFO | db_loader | upsert_ok | table=transactions rows=1
+2026-10-04 22:16:04 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:16:04 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:16:04 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:16:04 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:16:04 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:16:04 | INFO | pipeline | pipeline_start | incremental=False since=None
+2026-10-04 22:16:04 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:16:04 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:16:04 | INFO | salesforce | demo_mode | detail=reading data/sample/salesforce_*.json
+2026-10-04 22:16:04 | INFO | salesforce | extract_done | accounts=2 opportunities=2
+2026-10-04 22:16:04 | INFO | s3_loader | raw_saved | source=stripe rows=7 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/stripe/2026/10/04/164604.json
+2026-10-04 22:16:04 | INFO | s3_loader | raw_saved | source=salesforce rows=4 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/salesforce/2026/10/04/164604.json
+2026-10-04 22:16:04 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_bad errors=1
+2026-10-04 22:16:04 | INFO | cleaner | cleaned | source=stripe_customers rows=3
+2026-10-04 22:16:04 | INFO | cleaner | cleaned | source=stripe_charges rows=3
+2026-10-04 22:16:04 | INFO | cleaner | cleaned | source=salesforce_accounts rows=2
+2026-10-04 22:16:04 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=2
+2026-10-04 22:16:04 | INFO | mapper | unified | table=UnifiedCustomer rows=5
+2026-10-04 22:16:04 | INFO | mapper | unified | table=UnifiedTransaction rows=5
+2026-10-04 22:16:04 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:16:04 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:16:04 | INFO | db_loader | upsert_ok | table=transactions rows=5
+2026-10-04 22:16:04 | INFO | pipeline | pipeline_complete | stripe_raw=7 salesforce_raw=4 customers_loaded=5 transactions_loaded=5
+2026-10-04 22:16:04 | INFO | pipeline | pipeline_start | incremental=False since=None
+2026-10-04 22:16:04 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:16:04 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:16:04 | INFO | salesforce | demo_mode | detail=reading data/sample/salesforce_*.json
+2026-10-04 22:16:04 | INFO | salesforce | extract_done | accounts=2 opportunities=2
+2026-10-04 22:16:04 | INFO | s3_loader | raw_saved | source=stripe rows=7 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/stripe/2026/10/04/164604.json
+2026-10-04 22:16:04 | INFO | s3_loader | raw_saved | source=salesforce rows=4 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/salesforce/2026/10/04/164604.json
+2026-10-04 22:16:04 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_bad errors=1
+2026-10-04 22:16:04 | INFO | cleaner | cleaned | source=stripe_customers rows=3
+2026-10-04 22:16:04 | INFO | cleaner | cleaned | source=stripe_charges rows=3
+2026-10-04 22:16:04 | INFO | cleaner | cleaned | source=salesforce_accounts rows=2
+2026-10-04 22:16:04 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=2
+2026-10-04 22:16:04 | INFO | mapper | unified | table=UnifiedCustomer rows=5
+2026-10-04 22:16:04 | INFO | mapper | unified | table=UnifiedTransaction rows=5
+2026-10-04 22:16:04 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:16:04 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:16:04 | INFO | db_loader | upsert_ok | table=transactions rows=5
+2026-10-04 22:16:04 | INFO | pipeline | pipeline_complete | stripe_raw=7 salesforce_raw=4 customers_loaded=5 transactions_loaded=5
+2026-10-04 22:16:04 | INFO | cleaner | cleaned | source=stripe_customers rows=1
+2026-10-04 22:16:04 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_2 errors=1
+2026-10-04 22:16:04 | INFO | cleaner | cleaned | source=stripe_customers rows=1
+2026-10-04 22:16:04 | INFO | cleaner | cleaned | source=stripe_charges rows=2
+2026-10-04 22:16:04 | INFO | cleaner | cleaned | source=salesforce_accounts rows=1
+2026-10-04 22:16:04 | INFO | cleaner | cleaned | source=stripe_customers rows=1
+2026-10-04 22:16:04 | INFO | cleaner | cleaned | source=salesforce_accounts rows=1
+2026-10-04 22:16:04 | INFO | mapper | unified | table=UnifiedCustomer rows=2
+2026-10-04 22:16:04 | INFO | cleaner | cleaned | source=stripe_charges rows=2
+2026-10-04 22:16:04 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=1
+2026-10-04 22:16:04 | INFO | mapper | unified | table=UnifiedTransaction rows=2
+2026-10-04 22:17:56 | INFO | stripe | page_downloaded | endpoint=customers page=1 rows=2
+2026-10-04 22:17:56 | INFO | stripe | page_downloaded | endpoint=customers page=2 rows=1
+2026-10-04 22:17:56 | INFO | salesforce | query_done | rows=2
+2026-10-04 22:17:56 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:17:56 | INFO | stripe | page_downloaded | endpoint=customers page=1 rows=1
+2026-10-04 22:17:56 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:17:56 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:17:56 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:17:56 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:17:56 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:17:56 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:17:57 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:17:57 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:17:57 | INFO | db_loader | upsert_skipped_empty | table=customers
+2026-10-04 22:17:57 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:17:57 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:17:57 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:17:57 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:17:57 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:17:57 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:17:57 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:17:57 | INFO | db_loader | upsert_ok | table=transactions rows=1
+2026-10-04 22:17:57 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:17:57 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:17:57 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:17:57 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:17:57 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:17:57 | INFO | pipeline | pipeline_start | incremental=False since=None
+2026-10-04 22:17:57 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:17:57 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:17:57 | INFO | salesforce | demo_mode | detail=reading data/sample/salesforce_*.json
+2026-10-04 22:17:57 | INFO | salesforce | extract_done | accounts=2 opportunities=2
+2026-10-04 22:17:57 | INFO | s3_loader | raw_saved | source=stripe rows=7 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/stripe/2026/10/04/164757.json
+2026-10-04 22:17:57 | INFO | s3_loader | raw_saved | source=salesforce rows=4 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/salesforce/2026/10/04/164757.json
+2026-10-04 22:17:57 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_bad errors=1
+2026-10-04 22:17:57 | INFO | cleaner | cleaned | source=stripe_customers rows=3
+2026-10-04 22:17:57 | INFO | cleaner | cleaned | source=stripe_charges rows=3
+2026-10-04 22:17:57 | INFO | cleaner | cleaned | source=salesforce_accounts rows=2
+2026-10-04 22:17:57 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=2
+2026-10-04 22:17:57 | INFO | mapper | unified | table=UnifiedCustomer rows=5
+2026-10-04 22:17:57 | INFO | mapper | unified | table=UnifiedTransaction rows=5
+2026-10-04 22:17:57 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:17:57 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:17:57 | INFO | db_loader | upsert_ok | table=transactions rows=5
+2026-10-04 22:17:57 | INFO | pipeline | pipeline_complete | stripe_raw=7 salesforce_raw=4 customers_loaded=5 transactions_loaded=5
+2026-10-04 22:17:57 | INFO | pipeline | pipeline_start | incremental=False since=None
+2026-10-04 22:17:57 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:17:57 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:17:57 | INFO | salesforce | demo_mode | detail=reading data/sample/salesforce_*.json
+2026-10-04 22:17:57 | INFO | salesforce | extract_done | accounts=2 opportunities=2
+2026-10-04 22:17:57 | INFO | s3_loader | raw_saved | source=stripe rows=7 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/stripe/2026/10/04/164757.json
+2026-10-04 22:17:57 | INFO | s3_loader | raw_saved | source=salesforce rows=4 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/salesforce/2026/10/04/164757.json
+2026-10-04 22:17:57 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_bad errors=1
+2026-10-04 22:17:57 | INFO | cleaner | cleaned | source=stripe_customers rows=3
+2026-10-04 22:17:57 | INFO | cleaner | cleaned | source=stripe_charges rows=3
+2026-10-04 22:17:57 | INFO | cleaner | cleaned | source=salesforce_accounts rows=2
+2026-10-04 22:17:57 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=2
+2026-10-04 22:17:57 | INFO | mapper | unified | table=UnifiedCustomer rows=5
+2026-10-04 22:17:57 | INFO | mapper | unified | table=UnifiedTransaction rows=5
+2026-10-04 22:17:57 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:17:57 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:17:57 | INFO | db_loader | upsert_ok | table=transactions rows=5
+2026-10-04 22:17:57 | INFO | pipeline | pipeline_complete | stripe_raw=7 salesforce_raw=4 customers_loaded=5 transactions_loaded=5
+2026-10-04 22:17:57 | INFO | cleaner | cleaned | source=stripe_customers rows=1
+2026-10-04 22:17:57 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_2 errors=1
+2026-10-04 22:17:57 | INFO | cleaner | cleaned | source=stripe_customers rows=1
+2026-10-04 22:17:57 | INFO | cleaner | cleaned | source=stripe_charges rows=2
+2026-10-04 22:17:57 | INFO | cleaner | cleaned | source=salesforce_accounts rows=1
+2026-10-04 22:17:57 | INFO | cleaner | cleaned | source=stripe_customers rows=1
+2026-10-04 22:17:57 | INFO | cleaner | cleaned | source=salesforce_accounts rows=1
+2026-10-04 22:17:57 | INFO | mapper | unified | table=UnifiedCustomer rows=2
+2026-10-04 22:17:57 | INFO | cleaner | cleaned | source=stripe_charges rows=2
+2026-10-04 22:17:57 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=1
+2026-10-04 22:17:57 | INFO | mapper | unified | table=UnifiedTransaction rows=2
+2026-10-04 22:46:41 | INFO | pipeline | pipeline_start | incremental=False since=None
+2026-10-04 22:46:41 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:46:41 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:46:41 | INFO | salesforce | demo_mode | detail=reading data/sample/salesforce_*.json
+2026-10-04 22:46:41 | INFO | salesforce | extract_done | accounts=2 opportunities=2
+2026-10-04 22:46:41 | INFO | s3_loader | raw_saved | source=stripe rows=7 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/stripe/2026/10/04/171641.json
+2026-10-04 22:46:41 | INFO | s3_loader | raw_saved | source=salesforce rows=4 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/salesforce/2026/10/04/171641.json
+2026-10-04 22:46:41 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_bad errors=1
+2026-10-04 22:46:41 | INFO | cleaner | cleaned | source=stripe_customers rows=3
+2026-10-04 22:46:41 | INFO | cleaner | cleaned | source=stripe_charges rows=3
+2026-10-04 22:46:41 | INFO | cleaner | cleaned | source=salesforce_accounts rows=2
+2026-10-04 22:46:41 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=2
+2026-10-04 22:46:41 | INFO | mapper | unified | table=UnifiedCustomer rows=5
+2026-10-04 22:46:41 | INFO | mapper | unified | table=UnifiedTransaction rows=5
+2026-10-04 22:46:42 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:46:42 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:46:42 | INFO | db_loader | upsert_ok | table=transactions rows=5
+2026-10-04 22:46:42 | INFO | pipeline | pipeline_complete | stripe_raw=7 salesforce_raw=4 customers_loaded=5 transactions_loaded=5
+2026-10-04 22:46:43 | INFO | alerts | slack_alert_sent | 
+2026-10-04 22:52:18 | INFO | stripe | page_downloaded | endpoint=customers page=1 rows=2
+2026-10-04 22:52:18 | INFO | stripe | page_downloaded | endpoint=customers page=2 rows=1
+2026-10-04 22:52:18 | INFO | salesforce | query_done | rows=2
+2026-10-04 22:52:18 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:52:18 | INFO | stripe | page_downloaded | endpoint=customers page=1 rows=1
+2026-10-04 22:52:18 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:52:18 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:52:18 | WARNING | extractor | rate_limited | url=https://api.stripe.com/v1/customers wait_seconds=0
+2026-10-04 22:52:18 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:52:18 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:52:18 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:52:19 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:52:19 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:52:19 | INFO | db_loader | upsert_skipped_empty | table=customers
+2026-10-04 22:52:19 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:52:19 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:52:19 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:52:19 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:52:19 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:52:19 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:52:19 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:52:19 | INFO | db_loader | upsert_ok | table=transactions rows=1
+2026-10-04 22:52:19 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:52:19 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:52:19 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:52:19 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:52:19 | INFO | db_loader | upsert_ok | table=customers rows=1
+2026-10-04 22:52:19 | INFO | pipeline | pipeline_start | incremental=False since=None
+2026-10-04 22:52:19 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:52:19 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:52:19 | INFO | salesforce | demo_mode | detail=reading data/sample/salesforce_*.json
+2026-10-04 22:52:19 | INFO | salesforce | extract_done | accounts=2 opportunities=2
+2026-10-04 22:52:19 | INFO | s3_loader | raw_saved | source=stripe rows=7 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/stripe/2026/10/04/172219.json
+2026-10-04 22:52:19 | INFO | s3_loader | raw_saved | source=salesforce rows=4 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/salesforce/2026/10/04/172219.json
+2026-10-04 22:52:19 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_bad errors=1
+2026-10-04 22:52:19 | INFO | cleaner | cleaned | source=stripe_customers rows=3
+2026-10-04 22:52:19 | INFO | cleaner | cleaned | source=stripe_charges rows=3
+2026-10-04 22:52:19 | INFO | cleaner | cleaned | source=salesforce_accounts rows=2
+2026-10-04 22:52:19 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=2
+2026-10-04 22:52:19 | INFO | mapper | unified | table=UnifiedCustomer rows=5
+2026-10-04 22:52:19 | INFO | mapper | unified | table=UnifiedTransaction rows=5
+2026-10-04 22:52:19 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:52:19 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:52:19 | INFO | db_loader | upsert_ok | table=transactions rows=5
+2026-10-04 22:52:19 | INFO | pipeline | pipeline_complete | stripe_raw=7 salesforce_raw=4 customers_loaded=5 transactions_loaded=5
+2026-10-04 22:52:20 | INFO | alerts | slack_alert_sent | 
+2026-10-04 22:52:20 | INFO | pipeline | pipeline_start | incremental=False since=None
+2026-10-04 22:52:20 | INFO | stripe | demo_mode | detail=reading data/sample/stripe_*.json
+2026-10-04 22:52:20 | INFO | stripe | extract_done | customers=4 charges=3
+2026-10-04 22:52:20 | INFO | salesforce | demo_mode | detail=reading data/sample/salesforce_*.json
+2026-10-04 22:52:20 | INFO | salesforce | extract_done | accounts=2 opportunities=2
+2026-10-04 22:52:20 | INFO | s3_loader | raw_saved | source=stripe rows=7 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/stripe/2026/10/04/172220.json
+2026-10-04 22:52:20 | INFO | s3_loader | raw_saved | source=salesforce rows=4 location=/Volumes/Project Drive/Python/enterprise-etl-pipeline/data/raw/salesforce/2026/10/04/172220.json
+2026-10-04 22:52:20 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_bad errors=1
+2026-10-04 22:52:20 | INFO | cleaner | cleaned | source=stripe_customers rows=3
+2026-10-04 22:52:20 | INFO | cleaner | cleaned | source=stripe_charges rows=3
+2026-10-04 22:52:20 | INFO | cleaner | cleaned | source=salesforce_accounts rows=2
+2026-10-04 22:52:20 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=2
+2026-10-04 22:52:20 | INFO | mapper | unified | table=UnifiedCustomer rows=5
+2026-10-04 22:52:20 | INFO | mapper | unified | table=UnifiedTransaction rows=5
+2026-10-04 22:52:20 | INFO | db_loader | schema_ensured | 
+2026-10-04 22:52:20 | INFO | db_loader | upsert_ok | table=customers rows=5
+2026-10-04 22:52:20 | INFO | db_loader | upsert_ok | table=transactions rows=5
+2026-10-04 22:52:20 | INFO | pipeline | pipeline_complete | stripe_raw=7 salesforce_raw=4 customers_loaded=5 transactions_loaded=5
+2026-10-04 22:52:21 | INFO | alerts | slack_alert_sent | 
+2026-10-04 22:52:21 | INFO | cleaner | cleaned | source=stripe_customers rows=1
+2026-10-04 22:52:21 | WARNING | cleaner | bad_record_skipped | model=StripeCustomer id=cus_2 errors=1
+2026-10-04 22:52:21 | INFO | cleaner | cleaned | source=stripe_customers rows=1
+2026-10-04 22:52:21 | INFO | cleaner | cleaned | source=stripe_charges rows=2
+2026-10-04 22:52:21 | INFO | cleaner | cleaned | source=salesforce_accounts rows=1
+2026-10-04 22:52:21 | INFO | cleaner | cleaned | source=stripe_customers rows=1
+2026-10-04 22:52:21 | INFO | cleaner | cleaned | source=salesforce_accounts rows=1
+2026-10-04 22:52:21 | INFO | mapper | unified | table=UnifiedCustomer rows=2
+2026-10-04 22:52:21 | INFO | cleaner | cleaned | source=stripe_charges rows=2
+2026-10-04 22:52:21 | INFO | cleaner | cleaned | source=salesforce_opportunities rows=1
+2026-10-04 22:52:21 | INFO | mapper | unified | table=UnifiedTransaction rows=2

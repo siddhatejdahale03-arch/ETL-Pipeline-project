@@ -1,0 +1,6 @@
+[
+  {"id": "cus_001", "email": "  Alice@Example.com ", "name": "Alice Johnson", "created": 1759363200, "delinquent": false},
+  {"id": "cus_002", "email": "bob@example.com", "name": "Bob Smith", "created": 1759449600, "delinquent": true},
+  {"id": "cus_003", "email": null, "name": "Carol White", "created": 1759536000},
+  {"id": "cus_bad", "email": "broken@example.com", "name": "Missing created date"}
+]

@@ -1,0 +1,58 @@
+# Start everything:        docker compose up -d
+# Airflow UI:              http://localhost:8080
+# Run the ETL once:        docker compose run --rm etl
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: etl
+      POSTGRES_PASSWORD: etl
+      POSTGRES_DB: dw
+    ports:
+      - "5433:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+      - ./sql/init_airflow_db.sql:/docker-entrypoint-initdb.d/init_airflow_db.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U etl -d dw"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Runs the pipeline one time and exits
+  etl:
+    build: .
+    depends_on:
+      postgres:
+        condition: service_healthy
+    env_file: .env
+    environment:
+      DW_CONNECTION_STRING: postgresql+psycopg2://etl:etl@postgres:5432/dw
+    profiles: ["manual"]
+
+  # Airflow (scheduler + web UI) — runs the DAG every day
+  airflow:
+    image: apache/airflow:3.2.0-python3.13
+    depends_on:
+      postgres:
+        condition: service_healthy
+    env_file: .env
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://etl:etl@postgres:5432/airflow
+      DW_CONNECTION_STRING: postgresql+psycopg2://etl:etl@postgres:5432/dw
+      _PIP_ADDITIONAL_REQUIREMENTS: "polars pydantic-settings tenacity"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./src:/opt/airflow/src
+      - ./config:/opt/airflow/config
+      - ./sql:/opt/airflow/sql
+      - ./data:/opt/airflow/data
+    ports:
+      - "8080:8080"
+    command: standalone
+
+volumes:
+  pg_data:

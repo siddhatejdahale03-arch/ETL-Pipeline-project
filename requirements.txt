@@ -1,0 +1,26 @@
+# ---- Config & validation ----
+python-dotenv>=1.0
+pydantic>=2.10
+pydantic-settings>=2.6
+
+# ---- APIs ----
+requests>=2.32
+tenacity>=8.3
+
+# ---- Data processing ----
+polars>=1.0
+pandas>=2.2
+pyarrow>=18.0
+
+# ---- Database / storage ----
+SQLAlchemy>=2.0.31
+psycopg2-binary>=2.9.10
+boto3>=1.34
+
+# ---- Testing ----
+pytest>=8.2
+
+# ---- Airflow ----
+# NOT installed here: Airflow does not install cleanly with pip on Python 3.13.
+# It runs inside Docker instead:  docker compose up -d airflow
+# apache-airflow>=3.2.0

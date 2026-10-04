@@ -1,0 +1,38 @@
+# Runs all tests on every push and pull request.
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:15-alpine
+        env:
+          POSTGRES_USER: etl
+          POSTGRES_PASSWORD: etl
+          POSTGRES_DB: dw
+        ports: ["5433:5432"]
+        options: >-
+          --health-cmd "pg_isready -U etl -d dw"
+          --health-interval 10s --health-timeout 5s --health-retries 5
+
+    env:
+      DEMO_MODE: "true"
+      DW_CONNECTION_STRING: postgresql+psycopg2://etl:etl@localhost:5433/dw
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: pytest
+
+  docker-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t etl-pipeline .
