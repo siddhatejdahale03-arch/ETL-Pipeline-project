@@ -1,0 +1,34 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: etl_postgres
+    environment:
+      POSTGRES_USER: etl
+      POSTGRES_PASSWORD: etl
+      POSTGRES_DB: dw
+    ports:
+      - "5433:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U etl -d dw"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  etl:
+    build: .
+    container_name: etl_app
+    depends_on:
+      postgres:
+        condition: service_healthy
+    env_file:
+      - .env
+    environment:
+      DW_CONNECTION_STRING: postgresql+psycopg2://etl:etl@postgres:5432/dw
+    command: ["python", "-m", "src.pipeline"]
+
+volumes:
+  pg_data:
