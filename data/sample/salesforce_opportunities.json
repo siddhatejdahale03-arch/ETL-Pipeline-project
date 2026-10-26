@@ -1,0 +1,4 @@
+[
+  {"Id": "006A000001", "AccountId": "001A000001", "Name": "Cyberdyne - Annual License", "Amount": 120000, "StageName": "Closed Won", "CloseDate": "2026-10-01"},
+  {"Id": "006A000002", "AccountId": "001A000002", "Name": "Wayne - Pilot", "Amount": null, "StageName": "Prospecting", "CloseDate": "2026-11-15"}
+]

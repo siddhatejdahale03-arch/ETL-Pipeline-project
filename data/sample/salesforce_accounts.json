@@ -1,0 +1,4 @@
+[
+  {"Id": "001A000001", "Name": "Cyberdyne Systems", "Industry": "Technology", "AnnualRevenue": 5000000, "CreatedDate": "2026-09-10T10:00:00.000+0000", "LastModifiedDate": "2026-10-01T08:00:00.000+0000"},
+  {"Id": "001A000002", "Name": "Wayne Enterprises", "Industry": "Manufacturing", "AnnualRevenue": null, "CreatedDate": "2026-09-09T14:30:00.000+0000", "LastModifiedDate": "2026-10-02T09:15:00.000+0000"}
+]

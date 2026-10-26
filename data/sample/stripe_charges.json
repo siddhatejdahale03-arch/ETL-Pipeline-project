@@ -1,0 +1,5 @@
+[
+  {"id": "ch_001", "customer": "cus_001", "amount": 4999, "currency": "usd", "status": "succeeded", "description": "Pro plan", "created": 1759366800},
+  {"id": "ch_002", "customer": "cus_002", "amount": 10000, "currency": "eur", "status": "failed", "description": "Team plan", "created": 1759453200},
+  {"id": "ch_003", "customer": "cus_003", "amount": 1500, "currency": "gbp", "status": "SUCCEEDED", "description": " Add-on ", "created": 1759539600}
+]

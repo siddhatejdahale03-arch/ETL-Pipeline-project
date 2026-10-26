@@ -29,6 +29,9 @@ ENV/
 
 # Raw data (too large for git, stored in S3 or local only)
 data/
+# But DO commit the small demo/sample files used for tests
+!data/sample/
+!data/sample/**
 
 # Pytest
 .pytest_cache/
