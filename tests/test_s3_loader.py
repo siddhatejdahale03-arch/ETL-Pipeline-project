@@ -1,178 +1,94 @@
 """
-tests/test_s3_loader.py — Unit tests for S3Loader.
+tests/test_s3_loader.py — Tests for S3Loader / local file storage.
 
-All boto3 S3 calls are mocked — no real AWS credentials needed.
-Tests cover:
-  - S3 key generation (partition path correctness)
-  - Successful upload (data.json + _manifest.json written)
-  - Manifest content and structure
-  - Custom run_id is preserved
-  - S3 errors propagate after retries
+Updated for the new S3Loader that:
+  - reads all settings from config/settings.py (not constructor args)
+  - USE_S3=false (default) saves to local data/raw/ folder
+  - USE_S3=true uploads to AWS S3
+  - write_json(source, records) is the main method
 """
-
-import sys
-import os
 import json
-from datetime import datetime, timezone
-from unittest.mock import MagicMock, patch, call
+import os
+from pathlib import Path
+from unittest.mock import MagicMock, patch
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
-
-# Patch config env vars before importing
-with patch.dict(os.environ, {
-    "STRIPE_API_KEY": "sk_test_fake",
-    "AWS_ACCESS_KEY_ID": "fake_key",
-    "AWS_SECRET_ACCESS_KEY": "fake_secret",
-    "AWS_REGION": "us-east-1",
-    "AWS_BUCKET_NAME": "test-bucket",
-}):
-    from loaders.s3_loader import S3Loader
+from src.loaders.s3_loader import S3Loader
 
 
-# ---------------------------------------------------------------------------
-# Fixtures
-# ---------------------------------------------------------------------------
+class TestS3LoaderLocalMode:
+    """Tests for USE_S3=false (default) — saves to local data/raw/ folder."""
 
-FIXED_DT = datetime(2026, 9, 18, 13, 45, 0, tzinfo=timezone.utc)
-FIXED_RUN_ID = "test-run-abc123"
+    def test_write_json_creates_file_on_disk(self, tmp_path):
+        """write_json() must create a JSON file at the expected path."""
+        with patch("src.loaders.s3_loader.PROJECT_ROOT", tmp_path):
+            loader = S3Loader()
+            loader.settings.use_s3 = False  # local mode
+            location = loader.write_json("stripe", [{"id": "cus_1"}])
 
-SAMPLE_RECORDS = [
-    {"id": "cus_1", "email": "a@example.com", "name": "Alice"},
-    {"id": "cus_2", "email": "b@example.com", "name": "Bob"},
-]
+        assert Path(location).exists()
+
+    def test_write_json_file_contains_valid_json(self, tmp_path):
+        """The saved file must contain valid JSON with the correct records."""
+        records = [{"id": "cus_1", "email": "a@b.com"}]
+        with patch("src.loaders.s3_loader.PROJECT_ROOT", tmp_path):
+            loader = S3Loader()
+            loader.settings.use_s3 = False
+            location = loader.write_json("stripe", records)
+
+        saved = json.loads(Path(location).read_text())
+        assert saved == records
+
+    def test_write_json_returns_file_path_string(self, tmp_path):
+        """write_json() must return a non-empty string path."""
+        with patch("src.loaders.s3_loader.PROJECT_ROOT", tmp_path):
+            loader = S3Loader()
+            loader.settings.use_s3 = False
+            result = loader.write_json("salesforce", [])
+
+        assert isinstance(result, str)
+        assert len(result) > 0
+
+    def test_write_json_path_includes_source_name(self, tmp_path):
+        """The path must contain the source name for easy identification."""
+        with patch("src.loaders.s3_loader.PROJECT_ROOT", tmp_path):
+            loader = S3Loader()
+            loader.settings.use_s3 = False
+            location = loader.write_json("stripe", [{"id": "1"}])
+
+        assert "stripe" in location
+
+    def test_write_json_empty_records_still_creates_file(self, tmp_path):
+        """Even an empty records list must produce a valid JSON file."""
+        with patch("src.loaders.s3_loader.PROJECT_ROOT", tmp_path):
+            loader = S3Loader()
+            loader.settings.use_s3 = False
+            location = loader.write_json("stripe", [])
+
+        saved = json.loads(Path(location).read_text())
+        assert saved == []
 
 
-def _make_loader() -> tuple[S3Loader, MagicMock]:
-    """Return a loader instance with a mocked S3 client."""
-    with patch("boto3.client") as mock_boto:
+class TestS3LoaderS3Mode:
+    """Tests for USE_S3=true — uploads to AWS S3."""
+
+    def test_write_json_calls_put_object(self):
+        """In S3 mode, write_json() must call boto3 put_object exactly once."""
         mock_client = MagicMock()
-        mock_boto.return_value = mock_client
-        loader = S3Loader(bucket="test-bucket", region="us-east-1", prefix="raw")
-        return loader, mock_client
+        with patch("boto3.client", return_value=mock_client):
+            loader = S3Loader()
+            loader.client = mock_client        # inject mock
+            loader.settings.use_s3 = True
+            loader.write_json("stripe", [{"id": "cus_1"}])
 
+        mock_client.put_object.assert_called_once()
 
-# ---------------------------------------------------------------------------
-# Tests: Key Generation
-# ---------------------------------------------------------------------------
+    def test_write_json_s3_returns_s3_uri(self):
+        """In S3 mode, the returned location must be an s3:// URI."""
+        mock_client = MagicMock()
+        with patch("boto3.client", return_value=mock_client):
+            loader = S3Loader()
+            loader.client = mock_client
+            loader.settings.use_s3 = True
+            location = loader.write_json("stripe", [{"id": "cus_1"}])
 
-class TestS3KeyGeneration:
-
-    def test_key_format_correct(self):
-        loader, _ = _make_loader()
-        key = loader.get_s3_key(
-            source="stripe",
-            entity="customers",
-            run_id=FIXED_RUN_ID,
-            dt=FIXED_DT,
-        )
-        expected = "raw/stripe/customers/year=2026/month=09/day=18/test-run-abc123/data.json"
-        assert key == expected
-
-    def test_key_month_zero_padded(self):
-        loader, _ = _make_loader()
-        dt = datetime(2026, 1, 5, tzinfo=timezone.utc)
-        key = loader.get_s3_key("stripe", "customers", FIXED_RUN_ID, dt=dt)
-        assert "month=01" in key
-        assert "day=05" in key
-
-    def test_custom_filename(self):
-        loader, _ = _make_loader()
-        key = loader.get_s3_key("stripe", "customers", FIXED_RUN_ID, FIXED_DT, filename="_manifest.json")
-        assert key.endswith("_manifest.json")
-
-
-# ---------------------------------------------------------------------------
-# Tests: Upload
-# ---------------------------------------------------------------------------
-
-class TestS3LoaderUpload:
-
-    def test_upload_writes_data_and_manifest(self):
-        loader, mock_client = _make_loader()
-        mock_client.put_object = MagicMock()
-
-        data_key, manifest = loader.upload(
-            source="stripe",
-            records=SAMPLE_RECORDS,
-            entity="customers",
-            run_id=FIXED_RUN_ID,
-            extracted_at=FIXED_DT,
-        )
-
-        # Two S3 puts: data.json and _manifest.json
-        assert mock_client.put_object.call_count == 2
-
-    def test_upload_data_key_is_correct(self):
-        loader, mock_client = _make_loader()
-        mock_client.put_object = MagicMock()
-
-        data_key, _ = loader.upload(
-            source="stripe",
-            records=SAMPLE_RECORDS,
-            entity="customers",
-            run_id=FIXED_RUN_ID,
-            extracted_at=FIXED_DT,
-        )
-
-        expected_key = "raw/stripe/customers/year=2026/month=09/day=18/test-run-abc123/data.json"
-        assert data_key == expected_key
-
-    def test_manifest_has_required_fields(self):
-        loader, mock_client = _make_loader()
-        mock_client.put_object = MagicMock()
-
-        _, manifest = loader.upload(
-            source="stripe",
-            records=SAMPLE_RECORDS,
-            entity="customers",
-            run_id=FIXED_RUN_ID,
-            extracted_at=FIXED_DT,
-        )
-
-        required_fields = {
-            "run_id", "source", "entity", "extracted_at",
-            "record_count", "s3_bucket", "s3_key", "status"
-        }
-        assert required_fields.issubset(manifest.keys())
-
-    def test_manifest_record_count_correct(self):
-        loader, mock_client = _make_loader()
-        mock_client.put_object = MagicMock()
-
-        _, manifest = loader.upload(
-            source="stripe",
-            records=SAMPLE_RECORDS,
-            entity="customers",
-            run_id=FIXED_RUN_ID,
-            extracted_at=FIXED_DT,
-        )
-
-        assert manifest["record_count"] == len(SAMPLE_RECORDS)
-
-    def test_manifest_status_success(self):
-        loader, mock_client = _make_loader()
-        mock_client.put_object = MagicMock()
-
-        _, manifest = loader.upload(
-            source="stripe",
-            records=SAMPLE_RECORDS,
-            entity="customers",
-            run_id=FIXED_RUN_ID,
-            extracted_at=FIXED_DT,
-        )
-
-        assert manifest["status"] == "success"
-
-    def test_run_id_preserved_in_manifest(self):
-        loader, mock_client = _make_loader()
-        mock_client.put_object = MagicMock()
-
-        _, manifest = loader.upload(
-            source="stripe",
-            records=SAMPLE_RECORDS,
-            entity="customers",
-            run_id=FIXED_RUN_ID,
-            extracted_at=FIXED_DT,
-        )
-
-        assert manifest["run_id"] == FIXED_RUN_ID
+        assert location.startswith("s3://")

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Download Accounts and Opportunities from Salesforce using SOQL queries.
 

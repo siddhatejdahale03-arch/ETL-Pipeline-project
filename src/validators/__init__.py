@@ -1,6 +1,6 @@
 """Customer transformation validation utilities."""
 
-from validators.validator import (
+from src.validators.validator import (
     TransformationValidationError,
     ensure_valid_customer_record,
     validate_customer_record,

@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 SQLAlchemy upsert loader for PostgreSQL (Rohan's contribution).
 

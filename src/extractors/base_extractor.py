@@ -1,6 +1,9 @@
 """Code shared by every extractor: one safe GET request + demo data loading."""
+from __future__ import annotations
+
 import json
 import time
+from typing import Optional
 
 import requests
 
@@ -15,7 +18,7 @@ SAMPLE_FOLDER = PROJECT_ROOT / "data" / "sample"
 
 
 @api_retry
-def get_json(url: str, headers: dict, params: dict | None = None) -> dict:
+def get_json(url: str, headers: dict, params: Optional[dict] = None) -> dict:
     """
     Call an API with GET and return the JSON body.
 

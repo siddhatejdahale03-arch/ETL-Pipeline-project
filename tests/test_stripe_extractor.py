@@ -1,155 +1,83 @@
 """
-tests/test_stripe_extractor.py — Unit tests for StripeExtractor.
+tests/test_stripe_extractor.py — Tests for StripeExtractor.
 
-All HTTP calls are mocked — no real network or Stripe credentials needed.
-Tests cover:
-  - Single-page fetch (has_more=False)
-  - Multi-page pagination (has_more=True)
-  - Retry on 429 Rate Limit
-  - Invalid customer records are skipped gracefully
-  - Empty result set
+Updated for the new StripeExtractor that:
+  - reads api_key from config/settings.py (not a constructor arg)
+  - uses demo_mode=True to avoid real API calls in tests
+  - tags records with '_type': 'customer' or 'charge'
 """
+from unittest.mock import patch
 
-import sys
-import os
-
-# Ensure src is on the path when running from project root
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
-
-import pytest
-from unittest.mock import MagicMock, patch, call
-
-# Patch config before importing StripeExtractor so validation doesn't fire
-with patch.dict(os.environ, {
-    "STRIPE_API_KEY": "sk_test_fake",
-    "AWS_ACCESS_KEY_ID": "fake_key",
-    "AWS_SECRET_ACCESS_KEY": "fake_secret",
-    "AWS_REGION": "us-east-1",
-    "AWS_BUCKET_NAME": "test-bucket",
-}):
-    from extractors.stripe_extractor import StripeExtractor
-    from models.customer import Customer
+from src.extractors.stripe_extractor import StripeExtractor
 
 
-# ---------------------------------------------------------------------------
-# Fixtures
-# ---------------------------------------------------------------------------
+class TestStripeExtractorDemoMode:
+    """In DEMO_MODE the extractor reads from data/sample/ — no API needed."""
 
-def _make_customer_dict(cid: str, name: str = "Test User") -> dict:
-    return {
-        "id": cid,
-        "object": "customer",
-        "name": name,
-        "email": f"{cid}@example.com",
-        "phone": None,
-        "description": None,
-        "balance": 0,
-        "currency": "usd",
-        "delinquent": False,
-        "created": 1700000000,
-        "livemode": False,
-        "metadata": {},
-        "preferred_locales": [],
-    }
+    def test_extract_returns_both_customers_and_charges(self):
+        """extract() must return a mix of customer and charge records."""
+        extractor = StripeExtractor()
+        records = extractor.extract()
 
+        types = {r["_type"] for r in records}
+        assert "customer" in types
+        assert "charge" in types
 
-def _make_page(data: list, has_more: bool) -> dict:
-    return {"object": "list", "data": data, "has_more": has_more, "url": "/v1/customers"}
+    def test_all_records_have_type_tag(self):
+        """Every record must have a '_type' key set by the extractor."""
+        extractor = StripeExtractor()
+        records = extractor.extract()
+        assert all("_type" in r for r in records)
 
+    def test_customer_records_have_id(self):
+        """Customer records from sample data must all have an 'id' field."""
+        extractor = StripeExtractor()
+        customers = [r for r in extractor.extract() if r["_type"] == "customer"]
+        assert len(customers) > 0
+        assert all("id" in r for r in customers)
 
-# ---------------------------------------------------------------------------
-# Tests
-# ---------------------------------------------------------------------------
+    def test_charge_records_have_amount(self):
+        """Charge records from sample data must all have an 'amount' field."""
+        extractor = StripeExtractor()
+        charges = [r for r in extractor.extract() if r["_type"] == "charge"]
+        assert len(charges) > 0
+        assert all("amount" in r for r in charges)
 
-class TestStripeExtractorSinglePage:
-    """Extractor returns all records in one page (has_more=False)."""
-
-    def test_single_page_returns_all_customers(self):
-        raw_customers = [_make_customer_dict(f"cus_{i}") for i in range(3)]
-        page = _make_page(raw_customers, has_more=False)
-
-        extractor = StripeExtractor(api_key="sk_test_fake")
-        extractor._fetch_page = MagicMock(return_value=page)
-
-        customers = extractor.extract()
-
-        assert len(customers) == 3
-        assert all(isinstance(c, Customer) for c in customers)
-        assert customers[0].id == "cus_0"
-        extractor._fetch_page.assert_called_once_with(starting_after=None)
-
-    def test_empty_result_returns_empty_list(self):
-        page = _make_page([], has_more=False)
-
-        extractor = StripeExtractor(api_key="sk_test_fake")
-        extractor._fetch_page = MagicMock(return_value=page)
-
-        customers = extractor.extract()
-
-        assert customers == []
+    def test_returns_list(self):
+        """extract() must always return a list, never None."""
+        extractor = StripeExtractor()
+        result = extractor.extract()
+        assert isinstance(result, list)
 
 
 class TestStripeExtractorPagination:
-    """Extractor follows has_more cursor across multiple pages."""
+    """Test that the live pagination logic handles multiple pages correctly."""
 
-    def test_two_page_pagination(self):
-        page1 = _make_page([_make_customer_dict("cus_1"), _make_customer_dict("cus_2")], has_more=True)
-        page2 = _make_page([_make_customer_dict("cus_3")], has_more=False)
+    def test_fetch_all_follows_has_more(self):
+        """fetch_all() must keep requesting pages while 'has_more' is True."""
+        extractor = StripeExtractor()
 
-        extractor = StripeExtractor(api_key="sk_test_fake")
-        extractor._fetch_page = MagicMock(side_effect=[page1, page2])
+        page1 = {"data": [{"id": "cus_1"}, {"id": "cus_2"}], "has_more": True}
+        page2 = {"data": [{"id": "cus_3"}], "has_more": False}
 
-        customers = extractor.extract()
+        call_count = {"n": 0}
 
-        assert len(customers) == 3
-        assert customers[-1].id == "cus_3"
+        def fake_get_json(url, headers, params=None):
+            call_count["n"] += 1
+            return page1 if call_count["n"] == 1 else page2
 
-        # Verify cursor was passed correctly on the second call
-        calls = extractor._fetch_page.call_args_list
-        assert calls[0] == call(starting_after=None)
-        assert calls[1] == call(starting_after="cus_2")
+        with patch("src.extractors.stripe_extractor.get_json", side_effect=fake_get_json):
+            records = extractor.fetch_all("customers")
 
-    def test_three_page_pagination(self):
-        pages = [
-            _make_page([_make_customer_dict(f"cus_{i}") for i in range(5)], has_more=True),
-            _make_page([_make_customer_dict(f"cus_{i}") for i in range(5, 10)], has_more=True),
-            _make_page([_make_customer_dict(f"cus_{i}") for i in range(10, 13)], has_more=False),
-        ]
+        assert len(records) == 3
+        assert call_count["n"] == 2   # exactly 2 API calls made
 
-        extractor = StripeExtractor(api_key="sk_test_fake")
-        extractor._fetch_page = MagicMock(side_effect=pages)
+    def test_fetch_all_stops_when_no_more(self):
+        """fetch_all() must stop immediately when 'has_more' is False."""
+        extractor = StripeExtractor()
+        single_page = {"data": [{"id": "cus_only"}], "has_more": False}
 
-        customers = extractor.extract()
+        with patch("src.extractors.stripe_extractor.get_json", return_value=single_page):
+            records = extractor.fetch_all("customers")
 
-        assert len(customers) == 13
-        assert extractor._fetch_page.call_count == 3
-
-
-class TestStripeExtractorValidation:
-    """Invalid records are skipped, valid ones are returned."""
-
-    def test_invalid_record_skipped(self):
-        raw_good = _make_customer_dict("cus_good")
-        raw_bad = {"object": "customer"}  # Missing required `id` field
-        page = _make_page([raw_good, raw_bad], has_more=False)
-
-        extractor = StripeExtractor(api_key="sk_test_fake")
-        extractor._fetch_page = MagicMock(return_value=page)
-
-        customers = extractor.extract()
-
-        # Only the good record should be returned
-        assert len(customers) == 1
-        assert customers[0].id == "cus_good"
-
-
-class TestStripeExtractorPageLimitClamping:
-    """Page limit is clamped to [1, 100]."""
-
-    def test_over_limit_clamped_to_100(self):
-        extractor = StripeExtractor(api_key="sk_test_fake", page_limit=999)
-        assert extractor._page_limit == 100
-
-    def test_under_limit_clamped_to_1(self):
-        extractor = StripeExtractor(api_key="sk_test_fake", page_limit=0)
-        assert extractor._page_limit == 1
+        assert len(records) == 1
